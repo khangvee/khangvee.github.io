@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercise 2</title>
+        <style>
+            body{
+                background-color: dimgrey;
+                color: floralwhite;
+            }
+            .c1{
+                display: flex;
+                text-align: center;
+                flex-wrap: wrap;
+            }
+            .c1 > div{
+                margin: 5px;
+                height: 10vh;
+            }
+            .c1 .c1left{
+                background-color:grey;
+                width: 40%;
+            }
+            .c1 .c1right{
+                background-color:grey;
+                width: 58.5%;
+            }
+            .c2{
+                background-color:grey;
+                text-align: center;
+                height: 25vh;
+                margin-left: 5px;
+                margin-right: 5px;
+                margin-bottom: 10px;
+            }
+            .c3{
+                display: flex;
+                text-align: center;
+                flex-wrap: wrap;
+            }
+            .c3 > div{
+                width: 32.5%;
+                height: 15vh;
+                background-color:grey;
+                margin: 5px;
+            }
+            .c4{
+                display: flex;
+                text-align: center;
+                flex-wrap: wrap;
+            }
+            .c4 > div{
+                margin: 5px;
+                margin-top: 10px;
+                height: 30vh;
+            }
+            .c4 .c4left{
+                background-color:grey;
+                width: 30%;
+            }
+            .c4 .c4right{
+                background-color:grey;
+                width: 68%;
+            }
+            .c5{
+                background-color:grey;
+                text-align: center;
+                height: 10vh;
+                margin: 5px;
+            }
+            @media screen and (max-width: 600px){
+                .c1 .c1left{
+                    width: 100%;
+                }
+                .c1 .c1right{
+                    width: 100%;
+                }
+                .c3 .c3left{
+                    width: 48%;
+                }
+                .c3 .c3mid{
+                    width: 48%;
+                }
+                .c3 .c3right{
+                    width: 100%;
+                }
+                .c4 .c4left{
+                    width: 100%;
+                }
+                .c4 .c4right{
+                    width: 100%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="c1">
+            <div class="c1left">
+                <h1>LOGO</h1>
+            </div>
+            <div class="c1right">
+                <h1>MENU</h1>
+            </div>
+        </div>
+        <div class="c2">
+            <h1>IMAGE SLIDESHOW</h1>
+        </div>
+        <div class="c3">
+            <div class="c3left">
+                <h1>FEAT 1</h1>
+            </div>
+            <div class="c3mid">
+                <h1>FEAT 2</h1>
+            </div>
+            <div class="c3right">
+                <h1>FEAT 3</h1>
+            </div>
+        </div>
+        <div class="c4">
+            <div class="c4left">
+                <h1>SIDEBAR</h1>
+            </div>
+            <div class="c4right">
+                <h1>TEXT CONTENT</h1>
+            </div>
+        </div>
+        <div class="c5">
+            <h1>FOOTER</h1>
+        </div>
+    </body>
+</html>
