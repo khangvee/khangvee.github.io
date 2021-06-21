@@ -10,7 +10,6 @@
             .c1{
                 display: flex;
                 text-align: center;
-                flex-wrap: wrap;
             }
             .c1 > div{
                 margin: 5px;
@@ -22,7 +21,7 @@
             }
             .c1 .c1right{
                 background-color:grey;
-                width: 58.5%;
+                width: 60%;
             }
             .c2{
                 background-color:grey;
@@ -35,10 +34,9 @@
             .c3{
                 display: flex;
                 text-align: center;
-                flex-wrap: wrap;
             }
             .c3 > div{
-                width: 32.5%;
+                width: 33.33%;
                 height: 15vh;
                 background-color:grey;
                 margin: 5px;
@@ -46,7 +44,6 @@
             .c4{
                 display: flex;
                 text-align: center;
-                flex-wrap: wrap;
             }
             .c4 > div{
                 margin: 5px;
@@ -59,7 +56,7 @@
             }
             .c4 .c4right{
                 background-color:grey;
-                width: 68%;
+                width: 70%;
             }
             .c5{
                 background-color:grey;
@@ -68,20 +65,30 @@
                 margin: 5px;
             }
             @media screen and (max-width: 600px){
+                .c1{
+                    flex-wrap: wrap;
+                }
                 .c1 .c1left{
                     width: 100%;
                 }
                 .c1 .c1right{
                     width: 100%;
                 }
+                .c3{
+                    flex-wrap: wrap;
+                    flex-direction: row;
+                }
                 .c3 .c3left{
-                    width: 48%;
+                    width: 50%;
                 }
                 .c3 .c3mid{
-                    width: 48%;
+                    width: 50%;
                 }
                 .c3 .c3right{
                     width: 100%;
+                }
+                .c4{
+                    flex-wrap: wrap;
                 }
                 .c4 .c4left{
                     width: 100%;
