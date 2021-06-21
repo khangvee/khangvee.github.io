@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Homework 2</title>
+        <style>
+            body{
+                background-color: dimgrey;
+                color: floralwhite;
+                text-align: center;
+            }
+            .header{
+                display: flex;
+                margin: 10px;
+            }
+            .header .logo{
+                width: 25%;
+                background-color:grey;
+                height: 15vh;
+                margin-top: 20px;
+                margin-bottom: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .header .pmenu{
+                width: 75%;
+            }
+            .phone{
+                background-color:grey;
+                margin-left: 400px;
+                height: 6vh;
+            }
+            .menu{
+                margin-left: 200px;
+                background-color:grey;
+                height: 6vh;
+            }
+            .imgslideshow{
+                background-color:grey;
+                height: 20vh;
+                margin: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .textbar{
+                display: flex;
+                text-align: center;
+                margin-bottom: 10px;
+            }
+            .textbar > div{
+                margin: 10px;
+                margin-top: 10px;
+                height: 35vh;
+            }
+            .textbar .textcontent{
+                background-color:grey;
+                width: 65%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .textbar .sidebar{
+                background-color:grey;
+                width: 35%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .footer{
+                background-color:grey;
+                text-align: center;
+                height: 10vh;
+                margin: 10px;
+                padding: 5px;
+            }
+            @media screen and (max-width: 600px){
+                .phone{
+                    margin-left: 10px;
+                }
+                .menu{
+                    margin-left: 10px;
+                }
+                .textbar{
+                    flex-wrap: wrap;
+                }
+                .textbar .textcontent{
+                    width: 100%;
+                }
+                .textbar .sidebar{
+                    width: 100%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <div class="logo">
+                <h1>LOGO</h1>
+            </div>
+            <div class="pmenu">
+                <div class="phone">
+                    <h1>PHONE</h1>
+                </div>
+                <div class="menu">
+                    <h1>MENU</h1>
+                </div>
+            </div>  
+        </div>
+        <div class="imgslideshow">
+            <h1>IMAGE SLIDESHOW</h1>
+        </div>
+        <div class="textbar">
+            <div class="textcontent">
+                <h1>TEXT CONTENT</h1>
+            </div>
+            <div class="sidebar">
+                <h1>SIDEBAR</h1>
+            </div>
+        </div>
+        <div class="footer">
+            <h1>FOOTER</h1>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Homework 1</title>
+        <style>
+            body{
+                background-color: dimgrey;
+                color: floralwhite;
+            }
+            .c1{
+                display: flex;
+                text-align: center;
+            }
+            .c1 > div{
+                margin: 5px;
+            }
+            .c1 .c1left{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 20vh;
+                background-color:grey;
+                width: 40%;
+            }
+            .c1 .c1mid{
+                width: 20%;
+            }
+            .c1 .c1right{
+                height: fit-content;
+                background-color:grey;
+                width: 40%;
+                margin-top: 20px;
+            }
+            .c2{
+                background-color:grey;
+                text-align: center;
+                height: 10vh;
+                margin: 5px;
+                padding: 5px;
+            }
+            .c3{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color:grey;
+                height: 20vh;
+                margin-left: 5px;
+                margin-right: 5px;
+                margin-bottom: 10px;
+                margin-top: 10px;
+            }
+            .c4{
+                display: flex;
+                text-align: center;
+            }
+            .c4 > div{
+                width: 25%;
+                height: 10vh;
+                background-color:grey;
+                margin: 5px;
+            }
+            .c5{
+                display: flex;
+                text-align: center;
+            }
+            .c5 > div{
+                margin: 5px;
+                margin-top: 10px;
+                height: 25vh;
+            }
+            .c5 .c5left{
+                background-color:grey;
+                width: 70%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .c5 .c5right{
+                background-color:grey;
+                width: 30%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .c6{
+                background-color:grey;
+                text-align: center;
+                height: 10vh;
+                margin: 5px;
+                padding: 5px;
+            }
+            @media screen and (max-width: 600px){
+                .c1{
+                    flex-wrap: wrap;
+                }
+                .c1 .c1left{
+                    width: 100%;
+                }
+                .c1 .c1right{
+                    width: 100%;
+                    margin-top: 0px;
+                }
+                .c4{
+                    flex-wrap: wrap;
+                    flex-direction: row;
+                }
+                .c4 .feat1{
+                    width: 100%;
+                }
+                .c4 .feat2{
+                    flex: 1;
+                }
+                .c4 .feat3{
+                    flex: 1;
+                }
+                .c4 .feat4{
+                    width: 100%;
+                }
+                .c5{
+                    flex-wrap: wrap;
+                }
+                .c5 .c5left{
+                    width: 100%;
+                }
+                .c5 .c5right{
+                    width: 100%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="c1">
+            <div class="c1left">
+                <h1>LOGO</h1>
+            </div>
+            <div class="c1mid">
+            </div>
+            <div class="c1right">
+                <h1>PHONE NO</h1>
+            </div>
+        </div>
+        <div class="c2">
+            <h1>MENU</h1>
+        </div>
+        <div class="c3">
+            <h1>IMAGE SLIDESHOW</h1>
+        </div>
+        <div class="c4">
+            <div class="feat1">
+                <h1>FEAT 1</h1>
+            </div>
+            <div class="feat2">
+                <h1>FEAT 2</h1>
+            </div>
+            <div class="feat3">
+                <h1>FEAT 3</h1>
+            </div>
+            <div class="feat4">
+                <h1>FEAT 3</h1>
+            </div>
+        </div>
+        <div class="c5">
+            <div class="c5left">
+                <h1>TEXT CONTENT</h1>
+            </div>
+            <div class="c5right">
+                <h1>SIDEBAR</h1>
+            </div>
+        </div>
+        <div class="c6">
+            <h1>FOOTER</h1>
+        </div>
+    </body>
+</html>
