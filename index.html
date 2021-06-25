@@ -1,52 +1,186 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Tan Khang Vee - 2030345-BCS</title>
+        <title>Profile</title>
         <style>
             body{
                 background-image: url("images/bgp.jpg");
                 background-size: cover;
                 font-family: 'Pangolin', cursive;
+                margin: 50px;
+            }
+            div{
+                margin-left: 20px;
+                margin-right: 20px;
+                padding: 20px;
+            }
+            .header{
+                text-align: center;
+            }
+            .row1{
+                display: flex;
+            }
+            .introduction{
+                background-color:aliceblue;
+                flex: 1;
+            }
+            .skill{
+                background-color: beige;
+                flex: 1;
+            }
+            .row2{
+                display: flex;
+            }
+            .education{
+                background-color: beige;
+                flex: 2;
+            }
+            .language{
+                background-color:aliceblue;
+                flex: 1;
+            }
+            .row3{
+                display: flex;
+            }
+            .contact{
+                background-color:aliceblue;
+                flex: 1;
+            }
+            .experience{
+                background-color: beige;
+                flex: 2;
+            }
+            .row3 .contact h3 img{
+                padding-right: 15px;
+            }
+            .homework{
+                background-color: blanchedalmond;
+                margin: 20px;
+                margin-left: 60px;
+                margin-right: 60px;
+                text-align: center;
             }
             a{
                 text-decoration: none;
-                padding: 10px;
             }
             a:hover{
                 text-decoration: underline;
-                padding: 20px;
+            }
+            @media screen and (max-width: 600px){
+                .row1{
+                    flex-wrap: wrap;
+                }
+                .introduction{
+                    width: 100%;
+                    margin-bottom: 40px;
+                }
+                .skill{
+                    width: 100%;
+                }
+                .row2{
+                    flex-wrap: wrap;
+                }
+                .education{
+                    width: 100%;
+                    margin-bottom: 40px;
+                }
+                .language{
+                    width: 100%;
+                }
+                .row3{
+                    flex-wrap: wrap;
+                }
+                .contact{
+                    width: 100%;
+                    margin-bottom: 40px;
+                }
+                .experience{
+                    width: 100%;
+                }
             }
         </style>
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
     </head>
-    <body>
-        <h1>week 1</h1>
-        <img src="images/ntg.png" width="200px">
-        <h1>week 2</h1>
-        <a href="https://khangvee.github.io/week2/exercise1.html" target="_new">Exercise 1</a>
-        <a href="https://khangvee.github.io/week2/homework1/index.html" target="_new">Exercise 2</a>
-        <h1>week 3</h1>
-        <a href="https://khangvee.github.io/week3/exercise1.html" target="_new">Exercise 1</a>
-        <a href="https://khangvee.github.io/week3/exercise2.html" target="_new">Exercise 2</a>
-        <a href="https://khangvee.github.io/week3/exercise3.html" target="_new">Exercise 3</a>
-        <a href="https://khangvee.github.io/week3/homework1" target="_new">Homework 1</a>
-        <a href="https://khangvee.github.io/week3/homework2" target="_new">Homework 2</a>
-        <a href="https://khangvee.github.io/week3/homework3" target="_new">Homework 3</a>
-        <a href="https://khangvee.github.io/week3/homework4" target="_new">Homework 4</a>
-        <a href="https://khangvee.github.io/week3/homework5" target="_new">Homework 5</a>
-        <h1>week 4</h1>
-        <img src="images/holiday.jpg" width="200px">
-        <h1>week 5</h1>
-        <a href="https://khangvee.github.io/week5/exercise1" target="_new">Exercise 1</a>
-        <a href="https://khangvee.github.io/week5/exercise2" target="_new">Exercise 2</a>
-        <a href="https://khangvee.github.io/week5/exercise3" target="_new">Exercise 3</a>
-        <a href="https://khangvee.github.io/week5/homework1" target="_new">Homework 1</a>
-        <h1>week 6</h1>
-        <a href="https://khangvee.github.io/week6/exercise1" target="_new">Exercise 1</a>
-        <a href="https://khangvee.github.io/week6/exercise2" target="_new">Exercise 2</a>
-        <a href="https://khangvee.github.io/week6/homework1" target="_new">Homework 1</a>
-        <a href="https://khangvee.github.io/week6/homework2" target="_new">Homework 2</a>
-        <a href="https://khangvee.github.io/week6/homework3" target="_new">Homework 3</a>
+    <body>  
+        <div class="header">
+            <img src="images/logo.jpg" width="150px">
+            <h1>Hi, I am Khang Vee</h1>
+            <h1>Degree Student</h1>
+        </div>
+        <div class="row1">
+            <div class="introduction">
+                <h1>Introduction</h1>
+                <h3>My name is Tan Khang Vee, I live in Klang and I'm 21 years old, currently taking Bachelor in Information Technology (Cybersecurity) with Honours in New Era University College.</h3>
+            </div>
+            <div class="skill">
+                <h1>Skills</h1>
+                <ul>
+                    <li><h3>Networking</h3></li>
+                    <li><h3>Java Programming</h3></li>
+                    <li><h3>Android Programming</h3></li>
+                    <li><h3>Web Development</h3></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row2">
+            <div class="education">
+                <h1>Education</h1>
+                <h3>Primary School - SJK(c) Pui Ying (2007-2012)</h3>
+                <h3>Secondary School - SMJK Kwang Hua (2013-2017)</h3>
+                <h3>University/College - New Era University College (2018-2022)</h3>
+            </div>
+            <div class="language">
+                <h1>Languages</h1>
+                <ul>
+                    <li><h3>Mandarin</h3></li>
+                    <li><h3>English</h3></li>
+                    <li><h3>Malay</h3></li>
+                    <li><h3>Hokkien</h3></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row3">
+            <div class="contact">
+                <h1>Contact</h1>
+                <h3><img src="images/location.png" width="20px" height="17px">5, Jalan Sungai Kapar Indah 4e, 42200 Klang, Selangor.</h3>
+                <h3><img src="images/phone.png" width="20px" height="17px">011-10555383</h3>
+                <h3><img src="images/email.jpg" width="20px" height="17px">tankhangvee0027@e.newera.edu.my</h3>
+            </div>
+            <div class="experience">
+                <h1>Experiences</h1>
+                <h3>Getting my diploma internship in Ortustech (Malaysia) Sdn Bhd from January 2020 until March 2020 for a 3 month long. Providing technical support for every employees in the company as a IT technician.</h3>
+            </div>
+        </div>
+        <div class="homework">
+            <h1>week 1</h1>
+            <img src="images/ntg.png" width="100px">
+            <h1>week 2</h1>
+            <a href="https://khangvee.github.io/week2/exercise1.html" target="_new">Exercise 1</a>
+            <a href="https://khangvee.github.io/week2/homework1/index.html" target="_new">Exercise 2</a>
+            <h1>week 3</h1>
+            <a href="https://khangvee.github.io/week3/exercise1.html" target="_new">Exercise 1</a>
+            <a href="https://khangvee.github.io/week3/exercise2.html" target="_new">Exercise 2</a>
+            <a href="https://khangvee.github.io/week3/exercise3.html" target="_new">Exercise 3</a>
+            <a href="https://khangvee.github.io/week3/homework1" target="_new">Homework 1</a>
+            <a href="https://khangvee.github.io/week3/homework2" target="_new">Homework 2</a>
+            <a href="https://khangvee.github.io/week3/homework3" target="_new">Homework 3</a>
+            <a href="https://khangvee.github.io/week3/homework4" target="_new">Homework 4</a>
+            <a href="https://khangvee.github.io/week3/homework5" target="_new">Homework 5</a>
+            <h1>week 4</h1>
+            <img src="images/holiday.jpg" width="100px">
+            <h1>week 5</h1>
+            <a href="https://khangvee.github.io/week5/exercise1" target="_new">Exercise 1</a>
+            <a href="https://khangvee.github.io/week5/exercise2" target="_new">Exercise 2</a>
+            <a href="https://khangvee.github.io/week5/exercise3" target="_new">Exercise 3</a>
+            <a href="https://khangvee.github.io/week5/homework1" target="_new">Homework 1</a>
+            <h1>week 6</h1>
+            <a href="https://khangvee.github.io/week6/exercise1" target="_new">Exercise 1</a>
+            <a href="https://khangvee.github.io/week6/exercise2" target="_new">Exercise 2</a>
+            <a href="https://khangvee.github.io/week6/homework1" target="_new">Homework 1</a>
+            <a href="https://khangvee.github.io/week6/homework2" target="_new">Homework 2</a>
+            <a href="https://khangvee.github.io/week6/homework3" target="_new">Homework 3</a>
+            <h1>week 7</h1>
+        </div>
     </body>
 </html>
