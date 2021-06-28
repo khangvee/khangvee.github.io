@@ -21,7 +21,7 @@
                 border-radius: 50%;
                 border: 2px solid white;
             }
-            .row1{
+            .introskill{
                 display: flex;
             }
             .introduction{
@@ -32,7 +32,7 @@
                 background-color: #3266cc;
                 flex: 1;
             }
-            .row2{
+            .edulan{
                 display: flex;
             }
             .education{
@@ -43,7 +43,7 @@
                 background-color: #ffffff;
                 flex: 1;
             }
-            .row3{
+            .contactex{
                 display: flex;
             }
             .contact{
@@ -54,15 +54,19 @@
                 background-color: #3266cc;
                 flex: 2;
             }
-            .row3 .contact h3 img{
+            .contactex .contact h3 img{
                 padding-right: 15px;
             }
             .homework{
+                display: flex;
                 background-image: linear-gradient(to bottom, #ffffff, #3266cc);
                 margin: 20px;
                 margin-left: 60px;
                 margin-right: 60px;
                 text-align: center;
+            }
+            .homework > div{
+                flex: 1;
             }
             a{
                 text-decoration: none;
@@ -71,7 +75,7 @@
                 text-decoration: underline;
             }
             @media screen and (max-width: 600px){
-                .row1{
+                .introskill{
                     flex-wrap: wrap;
                 }
                 .introduction{
@@ -81,7 +85,7 @@
                 .skill{
                     width: 100%;
                 }
-                .row2{
+                .edulan{
                     flex-wrap: wrap;
                 }
                 .education{
@@ -91,7 +95,7 @@
                 .language{
                     width: 100%;
                 }
-                .row3{
+                .contactex{
                     flex-wrap: wrap;
                 }
                 .contact{
@@ -100,6 +104,9 @@
                 }
                 .experience{
                     width: 100%;
+                }
+                .homework{
+                    flex-wrap: wrap;
                 }
             }
         </style>
@@ -112,7 +119,7 @@
             <h1>Hi, I am Khang Vee</h1>
             <h1>Degree Student</h1>
         </div>
-        <div class="row1">
+        <div class="introskill">
             <div class="introduction">
                 <h1>Introduction</h1>
                 <h3>My name is Tan Khang Vee, I live in Klang and I'm 21 years old, currently taking Bachelor in Information Technology (Cybersecurity) with Honours in New Era University College.</h3>
@@ -127,7 +134,7 @@
                 </ul>
             </div>
         </div>
-        <div class="row2">
+        <div class="edulan">
             <div class="education">
                 <h1>Education</h1>
                 <h3>Primary School - SJK(c) Pui Ying (2007-2012)</h3>
@@ -144,12 +151,12 @@
                 </ul>
             </div>
         </div>
-        <div class="row3">
+        <div class="contactex">
             <div class="contact">
                 <h1>Contact</h1>
                 <h3><img src="images/location.png" width="20px" height="17px">5, Jalan Sungai Kapar Indah 4e, 42200 Klang, Selangor.</h3>
                 <h3><img src="images/phone.png" width="20px" height="17px">011-10555383</h3>
-                <h3><img src="images/email.jpg" width="20px" height="17px">tankhangvee0027@e.newera.edu.my</h3>
+                <h3><img src="images/email.jpg" width="20px" height="17px">tankhangvee 0027 @e.newera .edu.my</h3>
             </div>
             <div class="experience">
                 <h1>Experiences</h1>
@@ -157,36 +164,47 @@
             </div>
         </div>
         <div class="homework">
-            <h1>week 1</h1>
-            <img src="images/ntg.png" width="100px">
-            <h1>week 2</h1>
-            <a href="https://khangvee.github.io/week2/exercise1.html" target="_new">Exercise 1</a>
-            <a href="https://khangvee.github.io/week2/homework1/index.html" target="_new">Exercise 2</a>
-            <h1>week 3</h1>
-            <a href="https://khangvee.github.io/week3/exercise1.html" target="_new">Exercise 1</a>
-            <a href="https://khangvee.github.io/week3/exercise2.html" target="_new">Exercise 2</a>
-            <a href="https://khangvee.github.io/week3/exercise3.html" target="_new">Exercise 3</a>
-            <a href="https://khangvee.github.io/week3/homework1" target="_new">Homework 1</a>
-            <a href="https://khangvee.github.io/week3/homework2" target="_new">Homework 2</a>
-            <a href="https://khangvee.github.io/week3/homework3" target="_new">Homework 3</a>
-            <a href="https://khangvee.github.io/week3/homework4" target="_new">Homework 4</a>
-            <a href="https://khangvee.github.io/week3/homework5" target="_new">Homework 5</a>
-            <h1>week 4</h1>
-            <img src="images/holiday.jpg" width="100px">
-            <h1>week 5</h1>
-            <a href="https://khangvee.github.io/week5/exercise1" target="_new">Exercise 1</a>
-            <a href="https://khangvee.github.io/week5/exercise2" target="_new">Exercise 2</a>
-            <a href="https://khangvee.github.io/week5/exercise3" target="_new">Exercise 3</a>
-            <a href="https://khangvee.github.io/week5/homework1" target="_new">Homework 1</a>
-            <h1>week 6</h1>
-            <a href="https://khangvee.github.io/week6/exercise1" target="_new">Exercise 1</a>
-            <a href="https://khangvee.github.io/week6/exercise2" target="_new">Exercise 2</a>
-            <a href="https://khangvee.github.io/week6/homework1" target="_new">Homework 1</a>
-            <a href="https://khangvee.github.io/week6/homework2" target="_new">Homework 2</a>
-            <a href="https://khangvee.github.io/week6/homework3" target="_new">Homework 3</a>
-            <h1>week 7</h1>
-            <a href="https://khangvee.github.io/week7/exercise1" target="_new">Exercise 1</a>
-            <a href="https://khangvee.github.io/week7/exercise2" target="_new">Exercise 2</a>
+            <div class="col1">
+                <h1>week 1</h1>
+                <img src="images/ntg.png" width="100px">
+                <h1>week 2</h1>
+                <a href="https://khangvee.github.io/week2/exercise1.html" target="_new">Exercise 1</a>
+                <a href="https://khangvee.github.io/week2/homework1/index.html" target="_new">Exercise 2</a>
+                <h1>week 3</h1>
+                <a href="https://khangvee.github.io/week3/exercise1.html" target="_new">Exercise 1</a>
+                <a href="https://khangvee.github.io/week3/exercise2.html" target="_new">Exercise 2</a>
+                <a href="https://khangvee.github.io/week3/exercise3.html" target="_new">Exercise 3</a>
+                <a href="https://khangvee.github.io/week3/homework1" target="_new">Homework 1</a>
+                <a href="https://khangvee.github.io/week3/homework2" target="_new">Homework 2</a>
+                <a href="https://khangvee.github.io/week3/homework3" target="_new">Homework 3</a>
+                <a href="https://khangvee.github.io/week3/homework4" target="_new">Homework 4</a>
+                <a href="https://khangvee.github.io/week3/homework5" target="_new">Homework 5</a>
+                <h1>week 4</h1>
+                <img src="images/holiday.jpg" width="100px">
+                <h1>week 5</h1>
+                <a href="https://khangvee.github.io/week5/exercise1" target="_new">Exercise 1</a>
+                <a href="https://khangvee.github.io/week5/exercise2" target="_new">Exercise 2</a>
+                <a href="https://khangvee.github.io/week5/exercise3" target="_new">Exercise 3</a>
+                <a href="https://khangvee.github.io/week5/homework1" target="_new">Homework 1</a>
+                <h1>week 6</h1>
+                <a href="https://khangvee.github.io/week6/exercise1" target="_new">Exercise 1</a>
+                <a href="https://khangvee.github.io/week6/exercise2" target="_new">Exercise 2</a>
+                <a href="https://khangvee.github.io/week6/homework1" target="_new">Homework 1</a>
+                <a href="https://khangvee.github.io/week6/homework2" target="_new">Homework 2</a>
+                <a href="https://khangvee.github.io/week6/homework3" target="_new">Homework 3</a>
+                <h1>week 7</h1>
+                <a href="https://khangvee.github.io/week7/exercise1" target="_new">Exercise 1</a>
+                <a href="https://khangvee.github.io/week7/exercise2" target="_new">Exercise 2</a>
+            </div>
+            <div class="col2">
+                <h1>week 8</h1>
+                <h1>week 9</h1>
+                <h1>week 10</h1>
+                <h1>week 11</h1>
+                <h1>week 12</h1>
+                <h1>week 13</h1>
+                <h1>week 14</h1>
+            </div>
         </div>
     </body>
 </html>
