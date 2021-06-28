@@ -14,11 +14,27 @@
                 display: flex;
             }
             .content>div{
-                flex: 1;
+                width: 25%;
                 margin-right: 5px;
             }
             img{
                 width: 100%;
+            }
+            @media screen and (max-width: 768px){
+                .content{
+                    flex-wrap: wrap;
+                }
+                .content>div{
+                    width: 48.5%;
+                }
+            }
+            @media screen and (max-width: 480px){
+                .content{
+                    flex-wrap: wrap;
+                }
+                .content>div{
+                    width: 100%;
+                }
             }
         </style>
     </head>
