@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <title>Homework 2</title>
+        <style>
+            body{
+                max-width: 1280px;
+                margin-left: auto;
+                margin-right: auto;
+                background-image: url("hw2/bg.png");
+                background-size: cover;
+            }
+            .headerlogo{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .header{
+                position: relative;
+            }
+            .search{
+                position: absolute;
+                right: 0px;
+                top: 0px;
+            }
+            .header img{
+                margin: 20px;
+            }
+            .maincontent{
+                display: flex;
+                margin-top: 100px;
+            }
+            .right{
+                margin-left: 30px;
+                position: relative;
+            }
+            .button{
+                position: absolute;
+                right: 0px;
+                top: 0px;
+            }
+            .content{
+                margin-top: 50px;
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .content div{
+                flex: 1;
+            }
+            .content img{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            @media screen and (max-width: 768px) {
+                .right{
+                    margin-left: 10px;
+                }
+            }
+            @media screen and (max-width: 600px) {
+                .maincontent{
+                    flex-wrap: wrap;
+                }
+                .left{
+                    width: 100%;
+                }
+                .largeimg{
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+                .right{
+                    margin: 50px;
+                    margin-left: 130px;
+                    margin-right: 130px;
+                }
+                .content div{
+                    flex: 100%;
+                    width: 100%;
+                }
+                
+            }
+        </style>
+    </header>
+    <body>
+        <img src="hw2/headerlogo.png" class="headerlogo">
+        <div class="header">
+            <img src="hw2/home.png" class="home">
+            <img src="hw2/ARTICLES.png" class="article">
+            <img src="hw2/AUDIO.png" class="audio">
+            <img src="hw2/searchbar.png" class="search">
+        </div>
+        <div class="maincontent">
+            <div class="left">
+                <img src="hw2/largeimage.png" class="largeimg">
+            </div> 
+            <div class="right">
+                <h1>Check</h1>
+                <h1>recommended articles</h1>
+                <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <div class="smallimage">
+                    <img src="hw2/smallimg1.png" class="img1">
+                    <img src="hw2/smallimg2.png" class="img2">
+                    <img src="hw2/smallimg3.png" class="img3">
+                </div>
+                <img src="hw2/button.png" class="button">
+            </div>   
+        </div>
+        <div class="content">
+            <div class="cont1">
+                <img src="hw2/content1.png">
+            </div>
+            <div class="cont2">
+                <img src="hw2/content2.png">
+            </div>
+            <div class="cont3">
+                <img src="hw2/content3.png">
+            </div>
+            <div class="cont4">
+                <img src="hw2/content4.png">
+            </div>
+            <div class="cont5">
+                <img src="hw2/content5.png">
+            </div>
+        </div>
+    </body>
+</html>
