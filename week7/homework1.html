@@ -1,3 +1,6 @@
+<!-- Week 7: Homework 1 -->
+<!-- Tan Khang Vee -->
+<!-- 2030345-BCS -->
 <!DOCTYPE html>
 <html>
     <head>
@@ -7,46 +10,76 @@
                 margin: 0px;
             }
             .header{
-                background-image: url("hw1/Header.png");
-                background-size: cover;
                 display: flex;
                 margin-left: 100px;
             }
             .hleft{
-                width: 40%;
+                width: 50%;
                 position: relative;
             }
-            .headerlogo{
-                width: 60%;
+            .htop{
+                display: flex;
                 padding-left: 100px;
+                margin-top: 20px;
+            }
+            #mtext{
+                padding-top: 20px;
+                padding-left: 20px;
+                font-family: 'Dosis', sans-serif;
+            }
+            .hbot{
+                margin: 100px;
+                font-family: 'Poppins', sans-serif;
+            }
+            #perf{
+                max-width: 380px;
+            }
+            .getbg{
+                width: 200px;
+                height: 40px;
+                border-radius: 25px;
+                background-image: linear-gradient(to right, #2018a3, #5444e4);
+                color: white;
+            }
+            #get{
+                padding: 10px;
             }
             .facebook{
                 position: absolute;
                 left: 0px;
-                bottom: 380px;
+                bottom: 430px;
             }
             .google{
                 position: absolute;
                 left: 0px;
-                bottom: 330px;
+                bottom: 380px;
             }
             .twitter{
                 position: absolute;
                 left: 0px;
-                bottom: 280px;
+                bottom: 330px;
             }
             .instagram{
                 position: absolute;
                 left: 0px;
-                bottom: 230px;
+                bottom: 280px;
             }
             .hright{
+                background-image: url("hw1/BgShape.png");
+                background-size: contain;
+                background-repeat: no-repeat;
                 width: 50%;
-                margin-top: 100px;
+            }
+            .menubar{
+                display: flex;
+                justify-content: space-evenly;
+                color: white;
+                font-family: 'Poppins', sans-serif;
             }
             .headerimg{
                 width: 80%;
-                padding-left: 100px;
+                padding-left: 50px;
+                padding-top: 50px;
             }
             .mouse{
                 width: 20%;
@@ -55,6 +88,9 @@
                 display: flex;
                 justify-content: center;
                 margin-top: 50px;
+            }
+            #biotext{
+                color: darkslateblue;
             }
             .bioleft{
                 width: 50%;
@@ -65,103 +101,244 @@
                 padding-left: 50px;
                 background-image: url("hw1/biobg.png");
                 background-size: cover;
+                font-family: 'Poppins', sans-serif;
             }
             .bioimg{
                 width: 80%;
                 margin-left: 100px;
             }
-            .whoweare{
-                width: 60%;
-                display: block;
+            .bio{
+                max-width: 550px;
+            }
+            .biosee{
+                width: 120px;
+                height: 40px;
+                border-radius: 25px;
+                background-image: linear-gradient(to right, #2018a3, #5444e4);
+                color: white;
+            }
+            #biosm{
+                padding: 10px;
             }
             .ourservice{
                 margin: 100px;
+                font-family: 'Poppins', sans-serif;
             }
-            .service{
-                display: block;
-            }
-            .offer{
-                display: block;
+            #servicetext{
+                color: darkslateblue;
             }
             .offercontent{
                 background-image: url("hw1/Group1238.png");
                 background-size: cover;
                 margin-left: 30px;
                 margin-right: 30px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                font-family: 'Lato', sans-serif;
             }
-            .offer1 img{
-                width: 33%; 
+            .offercontent > div{
+                flex: 33%;
+                max-width: 350px;
+                min-height: 300px;
+                border-radius: 10px;
+                box-shadow: 0px 0px 5px #888888;
+                margin: 10px;
+                background-color: white;
+                padding: 20px;
+                position: relative;
             }
-            .offer2 img{
-                width: 33%;
+            .offimg{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
             }
-            .ourpricing{
-                width: 100%;
+            .see{
+                width: 100px;
+                height: 40px;
+                border-radius: 25px;
+                background-image: linear-gradient(to right, #2018a3, #5444e4);
+                color: white;
+                position: absolute;
+                right: 10px;
+                bottom: 10px;
+            }
+            .sm{
+                padding-left: 5px;
+            }
+            .pricing{
+                background-color: #bcbcc4;
+                font-family: 'Poppins', sans-serif;
+            }
+            #pritext{
+                text-align: center;
+                padding-top: 50px;
+                color: darkslateblue;
+            }
+            #ourtext{
+                text-align: center;
+            }
+            .pricetext{
+                color: darkslateblue;
+            }
+            .pbot{
+                display: flex;
+                justify-content: center;
+                padding-bottom: 100px;
+            }
+            .pbot > div{
+                flex: 1;
+                max-width: 300px;
+                background-color: white;
+                border-radius: 10px;
+                box-shadow: 0px 0px 5px #888888;
+                margin: 30px;
+                padding: 20px;
+                text-align: center;
+            }
+            .detwhite{
+                width: 100px;
+                height: 40px;
+                border-radius: 25px;
+                border: 2px solid blue;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .detblue{
+                width: 100px;
+                height: 40px;
+                border-radius: 25px;
+                background-image: linear-gradient(to right, #2018a3, #5444e4);
+                color: white;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .dw{
+                padding-bottom: 5px;
+                padding-left: 10px;
+            }
+            .db{
+                padding-top: 15px;
+                padding-left: 5px;
             }
             .newsletter{
-                margin: 50px;
+                margin: 100px;
+                font-family: 'Poppins', sans-serif;
             }
-            .newslettertitle{
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
-                width: 10%;
+            #newtext{
+                color: darkslateblue;
             }
-            .doyou{
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
-                width: 30%;
+            .ntop{
+                text-align: center;
             }
-            .barsub{
+            .nbot{
                 display: flex;
                 justify-content: center;
-                margin-top: 30px;
             }
-            .bar{
+            .nbot > div{
+                margin: 10px;
+            }
+            .drop{
                 width: 30%;
+                background-color: #e4e4ec;
+                border-radius: 10px;
             }
-            .subscribe{
-                width: 10%;
+            .subs{
+                width: 100px;
+                height: 50px;
+                border-radius: 20px;
+                background-image: linear-gradient(to right, #2018a3, #5444e4);
+                color: white;
+            }
+            #droptext{
+                margin-left: 20px;
+            }
+            #substext{
+                margin-left: 20px;
             }
             .footer{
-                background-image: url("hw1/bgfooter.png");
-                background-size: cover;
                 display: flex;
                 justify-content: center;
-                align-items: center;
+                background-image: url("hw1/bgfooter.png");
+                background-size: cover;
+                padding: 50px;
+                padding-top: 150px;
+                color: white;
+                font-family: 'Poppins', sans-serif;
+            }
+            #logotext{
+                padding-left: 40px;
             }
             .fleft{
                 width: 20%;
-                height: 80%;
-                padding-top: 50px;
             }
             .fright{
                 width: 60%;
-                padding-top: 120px;
+                display: flex;
             }
-            .logo{
-                width: 20%;
+            .fright > div {
+                flex: 1;
             }
-            .stayintouch{
-                width: 80%;
+            .fbot > img{
+                margin: 5px;
             }
-            .info{
-                
-                width: 80%;
+            .hlogo{
+                margin-right: 5px;
+            }
+            @media screen and (max-width: 768px) {
+                .pbot{
+                    flex-wrap: wrap;
+                }
+                .pbot > div{
+                    flex: 100%;
+                }
+                .biography{
+                    flex-wrap: wrap;
+                }
+                .biography > div{
+                    flex: 100%;
+                }
             }
         </style>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Lato:wght@300&family=Poppins:wght@200&display=swap" rel="stylesheet">
     </head>
     <body>
         <div class="header">
             <div class="hleft">
-                <img src="hw1/Group1541.png" class="headerlogo">
+                <div class="htop">
+                    <img src="hw1/Group1540.png">
+                    <h1 id="mtext">Marketing</h1>
+                </div>
+                <div class="hbot">
+                    <h2>SOCIAL MEDIA</h2>
+                    <h1>FOR BUSINESS!</h1>
+                    <p id="perf">PERFORMANCE BASED SOCIAL MEDIA AGENCY WE ARE LOREM MEDIA</p>
+                    <div class="getbg">
+                        <h3 id="get">GET A FREE AUDIT</h3>
+                    </div>
+                </div>
                 <img src="hw1/facebook.png" class="facebook">
                 <img src="hw1/google.png" class="google">
                 <img src="hw1/twitter.png" class="twitter">
                 <img src="hw1/instagram.png" class="instagram">
             </div>
             <div class="hright">
+                <div class="menubar">
+                    <div>
+                        <h3>HOME</h3>
+                    </div>
+                    <div>
+                        <h3>SERVICES</h3>
+                    </div>
+                    <div>
+                        <h3>PRICES</h3>
+                    </div>
+                    <div>
+                        <h3>CONTACT</h3>
+                    </div>
+                </div>
                 <img src="hw1/Group1423.png" class="headerimg">
                 <img src="hw1/Group1295.png" class="mouse">
             </div>
@@ -171,42 +348,154 @@
                 <img src="hw1/Group1538.png" class="bioimg">
             </div>
             <div class="bioright">
-                <img src="hw1/bio.png" class="whoweare">
-                <img src="hw1/SEEMORE.png" class="seemore">
+                <div class="bio">
+                    <h3 id="biotext">Biography</h3>
+                    <h1>Who We are</h1>
+                    <p>Lorem Media is a full-service social media agency. We offer businesses innovative solutions that deliver the right type of audience to you in the most effective strategies possible. We strive to develop a community around your business, polishing your branding, and improving your public relations. Social Media is now one of the most powerful marketing tools with the ability to communicate with a target audience in real time.
+                    </p>
+                    <p>It's 2019: time to sink or swim</p>
+                </div>
+                <div class="biosee">
+                    <h5 id="biosm">SEE MORE</h5>
+                </div>
             </div>
         </div>
         <div class="ourservice">
-            <img src="hw1/OURSERVICES.png" class="service">
-            <img src="hw1/WhatWeOffer.png" class="offer">
+            <h2 id="servicetext">OUR SERVICES</h2>
+            <h1>What We Offer</h1>
         </div>
         <div class="offercontent">
             <div class="offer1">
-                <img src="hw1/management.png" class="management">
-                <img src="hw1/growth.png" class="growth">
-                <img src="hw1/branding.png" class="branding">   
+                <img src="hw1/01.png" class="offimg">
+                <h4>SOCIAL MEDIA MANAGEMENT</h4>
+                <h5>Perfect for growing your brand’s social community and engage with the right audience. We manage everything from curation of content to management of comments and everything in between.</h5>
+                <div class="see">
+                    <h5 class="sm">SEE MORE</h5>
+                </div>
             </div>
             <div class="offer2">
-                <img src="hw1/influencer.png" class="influencer">
-                <img src="hw1/advertising.png" class="advertising">
-                <img src="hw1/marketing.png" class="marketing">   
+                <img src="hw1/02.png" class="offimg">
+                <h4>SOCIAL GROWTH CAMPAIGN</h4>
+                <h5>Our social growth campaign will have your socials come alive. With constant growth and engagement you will be sure to have the thriving you’ve been looking for.</h5>
+                <div class="see">
+                    <h5 class="sm">SEE MORE</h5>
+                </div>
+            </div>
+            <div class="offer3">
+                <img src="hw1/03.png" class="offimg">
+                <h4>BRANDING & MEDIA</h4>
+                <h5>Done right, branding offers a company an edge over the competition. So what exactly is branding, and why is it important for companies to integrate a well-rounded branding and media strategy?</h5>
+                <div class="see">
+                    <h5 class="sm">SEE MORE</h5>
+                </div>
+            </div>
+            <div class="offer4">
+                <img src="hw1/04.png" class="offimg">
+                <h4>INFLUENCER MARKETING</h4>
+                <h5>We will pair your business with influencers that speak to your audience. Influencer Marketing is the most effective way to reach a loyal audience.</h5>
+                <div class="see">
+                    <h5 class="sm">SEE MORE</h5>
+                </div>
+            </div>
+            <div class="offer5">
+                <img src="hw1/05.png" class="offimg">
+                <h4>SOCIAL MEDIA PAID ADVERTISING</h4>
+                <h5>Our ad campaigns will bring you the results your looking for. From brand awareness campaigns to lead funnels, we have got the tools to create the right ads for your business. Our re-targeting campaigns will be sure to get your visitors coming back to your site.</h5>
+                <div class="see">
+                    <h5 class="sm">SEE MORE</h5>
+                </div>
+            </div>
+            <div class="offer6">
+                <img src="hw1/06.png" class="offimg">
+                <h4>CONTENT MARKETING SERVICES</h4>
+                <h5>We can create and provide your company with the best content marketing for your socials to improve online presence. Creating valuable and quality content helps boost conversions and improve customer retention.</h5>
+                <div class="see">
+                    <h5 class="sm">SEE MORE</h5>
+                </div>
             </div>
         </div>
-        <img src="hw1/flav.png" class="ourpricing">
+        <div class="pricing">
+            <div class="ptop">
+                <h3 id="pritext">Pricing</h3>
+                <h1 id="ourtext">Our Pricing</h1>
+            </div>
+            <div class="pbot">
+                <div class="gold">
+                    <h3>Gold Package</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nisl nibh, sagittis ac faucibus sit amet, faucibus vitae lacus. Integer elementum at nisi pharetra convallis. Suspendisse potenti. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris vel iaculis dui.</p>
+                    <h2 class="pricetext">$ 140</h2>
+                    <div class="detwhite">
+                        <p class="dw">See Details</p>
+                    </div>
+                </div>
+                <div class="plat">
+                    <h3>Platinium Package</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nisl nibh, sagittis ac faucibus sit amet, faucibus vitae lacus. Integer elementum at nisi pharetra convallis. Suspendisse potenti. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris vel iaculis dui.</p>
+                    <h2 class="pricetext">$ 140</h2>
+                    <div class="detblue">
+                        <p class="db">See Details</p>
+                    </div>
+                </div>
+                <div class="silver">
+                    <h3>Silver Package</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nisl nibh, sagittis ac faucibus sit amet, faucibus vitae lacus. Integer elementum at nisi pharetra convallis. Suspendisse potenti. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris vel iaculis dui.</p>
+                    <h2 class="pricetext">$ 140</h2>
+                    <div class="detwhite">
+                        <p class="dw">See Details</p>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="newsletter">
-            <img src="hw1/Newsletter.png" class="newslettertitle">
-            <img src="hw1/do.png" class="doyou">
-            <div class="barsub">
-                <img src="hw1/Group70.png" class="bar">
-                <img src="hw1/Subscribe.png" class="subscribe">
+            <div class="ntop">
+                <h4 id="newtext">Newsletter</h4>
+                <h3>Do you want to get Special News?</h3>
+            </div>
+            <div class="nbot">
+                <div class="drop">
+                    <p id="droptext">Drop Your Email</p>
+                </div>
+                <div class="subs">
+                    <h5 id="substext">Subscribe</h5>
+                </div>
             </div>
         </div>
         <div class="footer">
             <div class="fleft">
-                <img src="hw1/logo.png" class="logo">
-                <img src="hw1/stay.png" class="stayintouch">
+                <div class="ftop">
+                    <h2 id="logotext">logo.</h2>
+                    <h3>Stay in touch</h3>
+                </div>
+                <div class="fbot">
+                    <img src="hw1/wfacebook.png">
+                    <img src="hw1/wgoogle.png">
+                    <img src="hw1/wtwitter.png">
+                    <img src="hw1/winstagram.png">
+                </div>
             </div>
             <div class="fright">
-                <img src="hw1/Footer.png" class="info">
+                <div class="quick">
+                    <h4>Quick Links</h4>
+                    <h5>About</h5>
+                    <h5>Home</h5>
+                    <h5>Pricing</h5>
+                    <h5>Location</h5>
+                    <h5>Office</h5>
+                </div>
+                <div class="hour">
+                    <h4>Hours</h4>
+                    <h5>Monday:       9.00 - 1800</h5>
+                    <h5>Tuesday:      9.00 - 1800</h5>
+                    <h5>Wednesday:    9.00 - 1800</h5>
+                    <h5>Thursday:     9.00 - 1800</h5>
+                    <h5>Friday:       9.00 - 1800</h5>
+                </div>
+                <div class="contact">
+                    <h4>Contact</h4>
+                    <h5><img src="hw1/phone.png" class="hlogo">000-000-0000</h5>
+                    <h5><img src="hw1/mail.png" class="hlogo">info@email.com</h5>
+                    <h5><img src="hw1/location.png" class="hlogo">New York, US</h5>
+                </div>
             </div>
         </div>
     </body>
