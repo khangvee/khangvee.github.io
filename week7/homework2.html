@@ -43,6 +43,10 @@
                 margin-left: 30px;
                 position: relative;
             }
+            #paragraph{
+                min-height: 125px;
+                font-weight: bold;
+            }
             .button{
                 position: absolute;
                 right: 0px;
@@ -58,65 +62,85 @@
                 position: relative;
                 max-width: 250px;
             }
+            .content > div{
+                box-shadow: 0px 0px 5px #888888;
+                border-radius: 5%;
+                margin: 10px;
+            }
             .bg1{
                 background-image: url("hw2/img1.png");
                 background-size: contain;
                 background-repeat: no-repeat;
-                min-height: 150px;
+                min-height: 180px;
                 position: relative;
             }
             .bg2{
                 background-image: url("hw2/img2.png");
                 background-size: contain;
                 background-repeat: no-repeat;
-                min-height: 150px;
+                min-height: 180px;
                 position: relative;
             }
             .bg3{
                 background-image: url("hw2/img3.png");
                 background-size: contain;
                 background-repeat: no-repeat;
-                min-height: 150px;
+                min-height: 180px;
                 position: relative;
             }
             .bg4{
                 background-image: url("hw2/img4.png");
                 background-size: contain;
                 background-repeat: no-repeat;
-                min-height: 150px;
+                min-height: 180px;
                 position: relative;
             }
             .bg5{
                 background-image: url("hw2/img5.png");
                 background-size: contain;
                 background-repeat: no-repeat;
-                min-height: 150px;
+                min-height: 180px;
                 position: relative;
             }
             .logo1{
                 position: absolute;
                 top: 10px;
-                right: 30px;
+                right: 20px;
             }
             .logo2{
                 position: absolute;
                 top: 10px;
-                right: 30px;
+                right: 20px;
             }
             .logo3{
                 position: absolute;
                 top: 10px;
-                right: 30px;
+                right: 20px;
             }
             .logo4{
                 position: absolute;
                 top: 10px;
-                right: 30px;
+                right: 20px;
             }
             .logo5{
                 position: absolute;
                 top: 10px;
-                right: 30px;
+                right: 20px;
+            }
+            .info1{
+                padding-left: 20px;
+            }
+            .info2{
+                padding-left: 20px;
+            }
+            .info3{
+                padding-left: 20px;
+            }
+            .info4{
+                padding-left: 20px;
+            }
+            .info5{
+                padding-left: 20px;
             }
             .content h3{
                 font-size: 11px;
@@ -148,6 +172,9 @@
                 position: absolute;
                 top: 10px;
                 right: 30px;
+            }
+            .font{
+                font-weight: bold;
             }
             @media screen and (max-width: 1000px) {
                 .content{
@@ -184,11 +211,14 @@
                     margin-left: auto;
                     margin-right: auto;
                 }
+                .button{
+                display: none;
+                }
             }
-            <link rel="preconnect" href="https://fonts.googleapis.com">
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-            <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
         </style>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
     </header>
     <body>
         <img src="hw2/headerlogo.png" class="headerlogo">
@@ -203,9 +233,9 @@
                 <img src="hw2/largeimage.png" class="largeimg">
             </div> 
             <div class="right">
-                <h1>Check</h1>
-                <h1>recommended articles</h1>
-                <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <h1 id="chk">Check</h1>
+                <h1 id="rec">recommended articles</h1>
+                <p id="paragraph">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                 <div class="smallimage">
                     <img src="hw2/smallimg1.png" class="img1">
                     <img src="hw2/smallimg2.png" class="img2">
@@ -221,7 +251,7 @@
                 </div>
                 <div class="info1">
                     <h3>PICK ME UP</h3>
-                    <p>Got the weather blues?</p>
+                    <p class="font">Got the weather blues?</p>
                     <img src="hw2/plus.png" class="plus1">
                 </div>
             </div>
@@ -231,7 +261,7 @@
                 </div>
                 <div class="info2">
                     <h3>FEELING GRAGILE</h3>
-                    <p>Need a little extra love?</p>
+                    <p class="font">Need a little extra love?</p>
                     <img src="hw2/plus.png" class="plus2">
                 </div>
             </div>
@@ -241,7 +271,7 @@
                 </div>
                 <div class="info3">
                     <h3>DEAR DIARY</h3>
-                    <p>A modern twist on journaling.</p>
+                    <p class="font">A modern twist on journaling.</p>
                     <img src="hw2/plus.png" class="plus3">
                 </div>
             </div>
@@ -251,7 +281,7 @@
                 </div>
                 <div class="info4">
                     <h3>SEMINAR</h3>
-                    <p>Neurogenesis. What is it & why care</p>
+                    <p class="font">Neurogenesis. What is it & why care</p>
                     <img src="hw2/plus.png" class="plus4">
                 </div>
             </div>
@@ -261,7 +291,7 @@
                 </div>
                 <div class="info5">
                     <h3>SEMINAR</h3>
-                    <p>Neurogenesis. What is it & why care</p>
+                    <p class="font">Neurogenesis. What is it & why care</p>
                     <img src="hw2/plus.png" class="plus5">
                 </div>
             </div>
