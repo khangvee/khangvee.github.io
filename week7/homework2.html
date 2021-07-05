@@ -16,7 +16,14 @@
                 margin-right: auto;
             }
             .header{
+                display: flex;
                 position: relative;
+            }
+            .header h3{
+                margin-right: 30px;
+            }
+            #article{
+                border-bottom: 3px solid purple;
             }
             .search{
                 position: absolute;
@@ -40,17 +47,35 @@
                 top: 0px;
             }
             .content{
-                margin-top: 50px;
                 display: flex;
-                flex-wrap: wrap;
             }
             .content div{
                 flex: 1;
             }
-            .content img{
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
+            .bg1{
+                background-image: url("hw2/img1.png");
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+            .bg2{
+                background-image: url("hw2/img2.png");
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+            .bg3{
+                background-image: url("hw2/img3.png");
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+            .bg4{
+                background-image: url("hw2/img4.png");
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+            .bg5{
+                background-image: url("hw2/img5.png");
+                background-size: contain;
+                background-repeat: no-repeat;
             }
             @media screen and (max-width: 768px) {
                 .right{
@@ -74,20 +99,15 @@
                     margin-left: 130px;
                     margin-right: 130px;
                 }
-                .content div{
-                    flex: 100%;
-                    width: 100%;
-                }
-                
             }
         </style>
     </header>
     <body>
         <img src="hw2/headerlogo.png" class="headerlogo">
         <div class="header">
-            <img src="hw2/home.png" class="home">
-            <img src="hw2/ARTICLES.png" class="article">
-            <img src="hw2/AUDIO.png" class="audio">
+            <h3>HOME</h3>
+            <h3 id="article">ARTICLES</h3>
+            <h3>AUDIO</h3>
             <img src="hw2/searchbar.png" class="search">
         </div>
         <div class="maincontent">
@@ -108,19 +128,49 @@
         </div>
         <div class="content">
             <div class="cont1">
-                <img src="hw2/content1.png">
+                <div class="bg1">
+                    <img src="hw2/logo1.png" class="logo1">
+                </div>
+                <div class="info1">
+                    <h3>PICK ME UP</h3>
+                    <p>Got the weather blues?</p>
+                </div>
             </div>
             <div class="cont2">
-                <img src="hw2/content2.png">
+                <div class="bg2">
+                    <img src="hw2/logo2.png" class="logo2">
+                </div>
+                <div class="info2">
+                    <h3>FEELING GRAGILE</h3>
+                    <p>Need a little extra love?</p>
+                </div>
             </div>
             <div class="cont3">
-                <img src="hw2/content3.png">
+                <div class="bg3">
+                    <img src="hw2/logo3.png" class="logo3">
+                </div>
+                <div class="info3">
+                    <h3>DEAR DIARY</h3>
+                    <p>A modern twist on journaling.</p>
+                </div>
             </div>
             <div class="cont4">
-                <img src="hw2/content4.png">
+                <div class="bg4">
+                    <img src="hw2/logo1.png" class="logo4">
+                </div>
+                <div class="info4">
+                    <h3>SEMINAR</h3>
+                    <p>Neurogenesis. What is it & why care</p>
+                </div>
             </div>
             <div class="cont5">
-                <img src="hw2/content5.png">
+                <div class="bg5">
+                    <img src="hw2/logo1.png" class="logo5">
+                </div>
+                <div class="info5">
+                    <h3>SEMINAR</h3>
+                    <p>Neurogenesis. What is it & why care</p>
+                </div>
             </div>
         </div>
     </body>
