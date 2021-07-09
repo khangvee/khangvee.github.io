@@ -186,6 +186,52 @@
                 margin-left: 20px;
                 margin-right: 20px;
             }
+            .footer{
+                position: fixed;
+                left: 0px;
+                bottom: 0px;
+                background-color: #4824ac;
+                width: 100vw;
+            }
+            .fsize{
+                display: flex;
+                justify-content: center;
+                color: white;
+                padding: 10px;
+                max-width: 1280px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .icon{
+                display: flex;
+                align-items: center;
+                margin-right: 20px;
+            }
+            .bar{
+                display: flex;
+            }
+            .yellow{
+                width: 15vw;
+                height: 8px;
+                background-color: yellow;
+            }
+            .white{
+                width: 45vw;
+                height: 8px;
+                background-color: white;
+            }
+            .fright{
+                display: flex;
+                align-items: center;
+                margin-left: 20px;
+            }
+            .fright > img{
+                margin-left: 20px;
+            }
+            #fplay{
+                margin-left: 10px;
+                margin-right: 10px;
+            }
         </style>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -320,6 +366,30 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="fsize">
+            <div class="fleft">
+                <div class="icon">
+                    <img src="audio/prev.png">
+                    <img src="audio/fplay.png" id="fplay">
+                    <img src="audio/next.png">
+                </div>
+            </div>
+            <div class="fmid">
+                <p>New rules - Show</p>
+                <div class="bar">
+                    <div class="yellow"></div>
+                    <div class="white"></div>
+                </div>
+            </div>
+            <div class="fright">
+                <p>3:48</p>
+                <img src="audio/volume.png">
+                <img src="audio/fdownload.png">
+                <img src="audio/share.png">
+            </div>
             </div>
         </div>
     </body>
