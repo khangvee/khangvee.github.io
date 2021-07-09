@@ -239,6 +239,48 @@
                 align-items: center;
                 padding: 10px;
             }
+            .mbtn{
+                display: none;
+                justify-content: space-around;
+                margin: 20px;
+            }
+            .mbtn button{
+                flex: 1;
+                min-width: 150px;
+                cursor: pointer;
+            }
+            .audio{
+                color: #4824ac;
+                border: 1px solid #4824ac;
+                padding: 5px;
+                border-radius: 25px;
+                background-color: white;
+            }
+            .librec{
+                color: white;
+                background-color: #4824ac;
+                border-radius: 25px;
+                padding: 5px;
+                border: none;
+            }
+            .mlist{
+                margin-top: 50px;
+                display: none;
+            }
+            .audiolist{
+                margin-left: 40px;
+                margin-right: 40px;
+                position: relative;
+                margin-top: 20px;
+            }
+            .dot{
+                position: absolute;
+                bottom: 0px;
+                right: 0px;
+            }
+            .mlist h3{
+                margin-bottom: 0px;
+            }
             @media screen and (max-width: 800px){
                 .mobileheader{
                     display: flex; 
@@ -276,8 +318,17 @@
                     min-width: 500px;
                     text-align: center;
                 }
+                .newrule{
+                    margin: 0px;
+                }
                 .newbutton{
                     justify-content: center;
+                }
+                .mbtn{
+                    display: flex;
+                }
+                .mlist{
+                    display: block;
                 }
             }
         </style>
@@ -449,6 +500,45 @@
                 <img src="audio/fdownload.png">
                 <img src="audio/share.png">
             </div>
+            </div>
+        </div>
+        <div class="mbtn">
+            <div>
+                <button class="audio">AUDIO LIST</button>
+            </div>
+            <div>
+                <button class="librec">LIBRARY</button>
+            </div>
+            <div>
+                <button class="librec">RECOMMEND</button>
+            </div>
+
+        </div>
+        <div class="mlist">
+            <div class="audiolist">
+                <h3>Audio Title</h3>
+                <p>Author</p>
+                <img src="audio/dot.png" class="dot">
+            </div>
+            <div class="audiolist">
+                <h3>Audio Title</h3>
+                <p>Author</p>
+                <img src="audio/dot.png" class="dot">
+            </div>
+            <div class="audiolist">
+                <h3>Audio Title</h3>
+                <p>Author</p>
+                <img src="audio/dot.png" class="dot">
+            </div>
+            <div class="audiolist">
+                <h3>Audio Title</h3>
+                <p>Author</p>
+                <img src="audio/dot.png" class="dot">
+            </div>
+            <div class="audiolist">
+                <h3>Audio Title</h3>
+                <p>Author</p>
+                <img src="audio/dot.png" class="dot">
             </div>
         </div>
     </body>
