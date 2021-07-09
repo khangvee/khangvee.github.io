@@ -232,6 +232,54 @@
                 margin-left: 10px;
                 margin-right: 10px;
             }
+            .mobileheader{
+                display: none;
+                justify-content: space-between;
+                background-color: white;
+                align-items: center;
+                padding: 10px;
+            }
+            @media screen and (max-width: 800px){
+                .mobileheader{
+                    display: flex; 
+                }
+                .header{
+                    display: none;
+                }
+                .menubar{
+                    display: none;
+                }
+                .leftbot{
+                    display: none;
+                }
+                .cright{
+                    display: none;
+                }
+                .footer{
+                    display: none;
+                }
+                .content{
+                    flex-wrap: wrap;
+                }
+                .content > div{
+                    flex: 1;
+                    width: 100%;
+                }
+                .cleft{
+                    border: none;
+                    box-shadow: none;
+                }
+                .lefttop{
+                    flex-wrap: wrap;
+                }
+                .lefttop > div{
+                    min-width: 500px;
+                    text-align: center;
+                }
+                .newbutton{
+                    justify-content: center;
+                }
+            }
         </style>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -242,6 +290,17 @@
             <div class="logo">
                 <img src="home/headerlogo.png">
                 <h5 id="logotext">LOGOHERE</h5>
+            </div>
+        </div>
+        <div class="mobileheader">
+            <div class="nav">
+                <img src="audio/nav.png">
+            </div>
+            <div class="mlogo">
+                <img src="audio/headerlogo.png">
+            </div>
+            <div class="noti">
+                <img src="audio/noti.png">
             </div>
         </div>
         <div class="menubar">
