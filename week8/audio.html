@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Audio Page</title>
+        <style>
+            body{
+                margin: 0px;
+                max-width: 1280px;
+                margin-left: auto;
+                margin-right: auto;
+                font-family: 'Montserrat', sans-serif;
+                padding-bottom: 100px;
+            }
+            .header{
+                display: flex;
+                justify-content: center;
+            }
+            .logo{
+                min-width: 150px;
+                background-color: white;
+                text-align: center;
+                padding-top: 10px;
+                border-bottom-left-radius: 20px;
+                border-bottom-right-radius: 20px;
+                box-shadow: 0px 0px 5px grey;
+                color: #4620ac;
+            }
+            #logotext{
+                margin: 10px;
+            }
+            .menubar{
+                position: relative;
+                margin-top: 50px;
+                margin-bottom: 50px;
+            }
+            a{
+                text-decoration: none;
+                color: grey;
+                margin: 20px;
+            }
+            a:hover{
+                text-decoration: underline;
+            }
+            .search{
+                position: absolute;
+                right: 0px;
+                top: 0px;
+                border: none;
+                border-radius: 20px;
+                background-color: #c6c6d0;
+                padding: 5px;
+            }
+            .content{
+                display: flex;
+            }
+            .content > div{
+                flex: 1;
+                margin: 20px;
+            }
+            .cleft{
+                border-radius: 5px;
+                border: 1px solid #c6c6d0;
+                box-shadow: 0px 0px 5px;
+            }
+            .lefttop{
+                display: flex;
+                padding: 20px;
+                font-size: 90%;
+            }
+            .imgnewrule{
+                flex: 1;
+            }
+            .newrule{
+                flex: 2;    
+                margin-left: 20px;
+            }
+            #nrh1{
+                margin-bottom: 0px;
+            }
+            .newrule > h3{
+                margin: 0px;
+            }
+            .newbutton{
+                display: flex;
+                margin-top: 20px;
+            }
+            .btn{
+                padding: 5px;
+                padding-right: 20px;
+                margin-right: 20px;
+                background-color: white;
+                border-radius: 5px;
+                border: 1px solid #c6c6d0;
+                cursor: pointer;
+            }
+            .btnimg{
+                margin-left: 8px;
+                margin-right: 10px;
+            }
+            .leftbot > div{
+                display: flex;
+                position: relative;
+                border-bottom: 1px solid #c6c6d0;
+                padding: 10px;
+            }
+            .btnmusic{
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+            #music7{
+                border-bottom: none;
+            }
+            p{
+                margin: 0px;
+            }
+            .dlicon{
+                height: 15px;
+                position: absolute;
+                right: 100px;
+                top: 10px;
+            }
+            .duration{
+                position: absolute;
+                right: 10px;
+                top: 10px;
+            }
+            .righttop{
+                border-radius: 5px;
+                border: 1px solid #c6c6d0;
+                box-shadow: 0px 0px 5px;
+            }
+            .positive{
+                background-image: url("audio/bg.png");
+                background-size: cover;
+                min-height: 150px;
+                max-width: 600px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .be{
+                background-color: rgba(0,0,0,0.3);
+                color: white;
+                border: none;
+                border-radius: 25px;
+                padding-left: 50px;
+                padding-right: 50px;
+            }
+            #bepoh3{
+                margin: 5px;
+            }
+            .about{
+                padding: 20px;
+                position: relative;
+                font-size: 80%;
+            }
+            #add{
+                position: absolute;
+                right: 20px;
+                bottom: 20px;
+            }
+            .rightbot{
+                display: flex;
+                justify-content: space-between;
+                margin-top: 40px;
+                font-size: 50%;
+            }
+            .rightbot > div{
+                flex: 1;
+                border-radius: 5%;
+                box-shadow: 0px 0px 5px #888888;
+                position: relative;
+            }
+            .title{
+                padding: 10px;
+            }
+            .imgtitle{
+                width: 100%;
+            }
+            .btnplay{
+                position: absolute;
+                right: 10px;
+                bottom: 10px;
+            }
+            .img2{
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+        </style>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="header">
+            <div class="logo">
+                <img src="home/headerlogo.png">
+                <h5 id="logotext">LOGOHERE</h5>
+            </div>
+        </div>
+        <div class="menubar">
+            <a href="https://khangvee.github.io/week8/homework1">HOME</a>
+            <a href="https://khangvee.github.io/week7/homework2">ARTICLES</a>
+            <a href="">AUDIO</a>
+            <form>
+                <input type="text" name="search" value="Search" class="search">
+            </form>
+        </div>
+        <div class="content">
+            <div class="cleft">
+                <div class="lefttop">
+                    <div class="imgnewrule">
+                        <img src="audio/newrule.png">
+                    </div>
+                    <div class="newrule">
+                        <h1 id="nrh1">New Rules</h1>
+                        <h3>By John Doe</h3>
+                        <h3>Show : Coffe break</h3>
+                        <div class="newbutton">
+                            <div>
+                                <button class="btn"><img src="audio/+.png" class="btnimg">Add to Playlist</button>
+                            </div>
+                            <div>
+                                <button class="btn"><img src="audio/download.png" class="btnimg">Download All</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="leftbot">
+                    <div>
+                        <img src="audio/play.png" class="btnmusic">
+                        <p>Let's talk</p>
+                        <img src="audio/download.png" class="dlicon">
+                        <p class="duration">30:43</p>
+                    </div>
+                    <div>
+                        <img src="audio/pause.png" class="btnmusic">
+                        <p>New rules</p>
+                        <img src="audio/download.png" class="dlicon">
+                        <p class="duration">13:48</p>
+                    </div>
+                    <div>
+                        <img src="audio/play.png" class="btnmusic">
+                        <p>My life</p>
+                        <img src="audio/download.png" class="dlicon">
+                        <p class="duration">10:43</p>
+                    </div>
+                    <div>
+                        <img src="audio/play.png" class="btnmusic">
+                        <p>Hatin On The Club</p>
+                        <img src="audio/download.png" class="dlicon">
+                        <p class="duration">4:59</p>
+                    </div>
+                    <div>
+                        <img src="audio/play.png" class="btnmusic">
+                        <p>Trust In Me</p>
+                        <img src="audio/download.png" class="dlicon">
+                        <p class="duration">11:00</p>
+                    </div>
+                    <div>
+                        <img src="audio/play.png" class="btnmusic">
+                        <p>Bad Girl</p>
+                        <img src="audio/download.png" class="dlicon">
+                        <p class="duration">20:43</p>
+                    </div>
+                    <div id="music7">
+                        <img src="audio/play.png" class="btnmusic">
+                        <p>Live Your Life</p>
+                        <img src="audio/download.png" class="dlicon">
+                        <p class="duration">12:43</p>
+                    </div>
+                </div>
+            </div>
+            <div class="cright">
+                <div class="righttop">
+                    <div class="positive">
+                        <div class="be">
+                            <h3 id="bepoh3">BE POSITIVE</h3>
+                        </div>
+                    </div>
+                    <div class="about">
+                        <h3>ABOUT SHOW</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
+                        <h3>NEXT EPISODE</h3>
+                        <p>Every Monday, 7:00 o'clock</p>
+                        <div id="add">
+                            <button class="btn"><img src="audio/+.png" class="btnimg">Add to Playlist</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="rightbot">
+                    <div class="img1">
+                        <div class="bg1">
+                            <img src="audio/img1.png" class="imgtitle">
+                        </div>
+                        <div class="title">
+                            <h3>TITLE - SHOW</h3>
+                            <p>Tought meeting today?</p>
+                            <img src="audio/play.png" class="btnplay">
+                        </div>
+                    </div>
+                    <div class="img2">
+                        <div class="bg2">
+                            <img src="audio/img2.png" class="imgtitle">
+                        </div>
+                        <div class="title">
+                            <h3>TITLE - SHOW</h3>
+                            <p>Feeling frazzled?</p>
+                            <img src="audio/play.png" class="btnplay">
+                        </div>
+                    </div>
+                    <div class="img3">
+                        <div class="bg3">
+                            <img src="audio/img3.png" class="imgtitle">
+                        </div>
+                        <div class="title">
+                            <h3>TITLE - SHOW</h3>
+                            <p>Feeling frazzled?</p>
+                            <img src="audio/play.png" class="btnplay">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
