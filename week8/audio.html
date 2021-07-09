@@ -281,6 +281,9 @@
             .mlist h3{
                 margin-bottom: 0px;
             }
+            .mobfooter{
+                display: none;
+            }
             @media screen and (max-width: 800px){
                 .mobileheader{
                     display: flex; 
@@ -329,6 +332,22 @@
                 }
                 .mlist{
                     display: block;
+                }
+                .mobfooter{
+                    display: block;
+                    position: fixed;
+                    bottom: 0px;
+                    left: 0px;
+                    width: 100vw;
+                    color: #4824ac;
+                }
+                .mobfootersize{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-evenly;
+                    border-top: 1px solid grey;
+                    background-color: white;
+                    box-shadow: 0px 0px 10px;
                 }
             }
         </style>
@@ -539,6 +558,19 @@
                 <h3>Audio Title</h3>
                 <p>Author</p>
                 <img src="audio/dot.png" class="dot">
+            </div>
+        </div>
+        <div class="mobfooter">
+            <div class="mobfootersize">
+                <div class="mfleft">
+                    <img src="audio/expand.png">
+                </div>
+                <div class="mfmid">
+                    <h3>Audio Title     •Artist</h3>
+                </div>
+                <div class="mfbot">
+                    <img src="audio/footerplay.png">
+                </div>
             </div>
         </div>
     </body>
