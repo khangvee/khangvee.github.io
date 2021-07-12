@@ -21,7 +21,14 @@ body{
 #logotext{
     margin: 10px;
 }
-.subtitle{
+.nav{
     text-align: center;
-    color: white;
+    margin-top: 20px;
+}
+a{
+    text-decoration: none;
+    margin: 20px;
+}
+a:hover{
+    text-decoration: underline;
 }
