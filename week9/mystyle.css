@@ -1,0 +1,21 @@
+.header{
+    display: flex;
+    justify-content: center;
+}
+.logo{
+    min-width: 150px;
+    background-color: white;
+    text-align: center;
+    padding-top: 10px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0px 0px 5px grey;
+    color: #4620ac;
+}
+#logotext{
+    margin: 10px;
+}
+.subtitle{
+    text-align: center;
+    color: white;
+}
