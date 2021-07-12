@@ -10,14 +10,24 @@
             body{
                 max-width: 1080px;
             }
-            .search{
+            .searchbar{
                 position: absolute;
                 right: 0px;
                 top: 0px;
                 border: none;
-                border-radius: 20px;
-                background-color: #c6c6d0;
+                border-radius: 15px;
+                background-color: #c6c6d06c;
                 padding: 5px;
+            }
+            .searchbar form{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-left: 20px;
+            }
+            .search{
+                background: none;
+                border: none;
             }
             .mobileheader{
                 display: none;
@@ -226,9 +236,12 @@
             <a href="https://khangvee.github.io/week8/homework1">HOME</a>
             <a class="selected" href="">ARTICLES</a>
             <a href="https://khangvee.github.io/week8/audio">AUDIO</a>
-            <form>
-                <input type="text" name="search" placeholder="Search" class="search">
-            </form>
+            <div class="searchbar">
+                <form>
+                    <i class="searchicon"><img src="hw2/searchicon.png"></i>
+                    <input type="text" name="search" placeholder="Search" class="search">
+                </form>
+            </div>
         </div>
         <div class="mobileheader">
             <div class="nav">
