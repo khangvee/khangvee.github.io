@@ -35,5 +35,5 @@ a:hover{
     text-decoration: underline;
 }
 .selected{
-    text-decoration: underline;
+    border-bottom: 5px solid #4620ac;
 }
