@@ -1,0 +1,202 @@
+a {
+    color: white;
+}
+body{
+    background-image: url("../home/bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.bg {
+    background-color: rgba(70, 32, 172, 0.5);
+}
+.container{
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.join {
+    max-width: 500px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    margin-top: 100px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    color: white;
+}
+
+.content>div {
+    flex: 1;
+    max-width: 200px;
+    margin: 20px;
+    text-align: center;
+}
+
+.signlog {
+    display: flex;
+    justify-content: center;
+}
+
+.signlog>button {
+    margin: 20px;
+}
+
+.signup {
+    padding: 10px;
+    padding-left: 80px;
+    padding-right: 80px;
+    border-radius: 25px;
+    border: 2px solid white;
+    cursor: pointer;
+    background: none;
+    color: white;
+}
+
+.login {
+    padding: 10px;
+    padding-left: 80px;
+    padding-right: 80px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+}
+
+.mobileheader {
+    display: none;
+}
+
+.signform {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .content {
+        flex-wrap: wrap;
+    }
+
+    .content>div {
+        flex: 100%;
+        max-width: 400px;
+    }
+
+    .mobileheader {
+        display: flex;
+        justify-content: space-between;
+        background-color: white;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .header {
+        display: none;
+    }
+
+    .menubar {
+        display: none;
+    }
+
+    .join {
+        text-align: left;
+        max-width: 400px;
+    }
+
+    .signlog {
+        display: none;
+    }
+
+    .signform {
+        display: block;
+        max-width: 400px;
+        background-color: white;
+        border-radius: 25px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .msignlog {
+        display: flex;
+        justify-content: center;
+    }
+
+    .msignlog>button {
+        margin: 20px;
+    }
+
+    .msignup {
+        padding: 10px;
+        padding-left: 50px;
+        padding-right: 50px;
+        border-radius: 25px;
+        border: 2px solid #4620ac;
+        ;
+        cursor: pointer;
+        color: #4620ac;
+        background: none;
+    }
+
+    .mlogin {
+        padding: 10px;
+        padding-left: 50px;
+        padding-right: 50px;
+        border-radius: 25px;
+        border: none;
+        cursor: pointer;
+        background-color: #4620ac;
+        color: white;
+    }
+
+    .gender {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .gender>div {
+        flex: 1;
+        min-width: 100px;
+        min-height: 150px;
+        border-radius: 20px;
+        margin: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .male {
+        background-color: #4620ac;
+    }
+
+    .female {
+        box-shadow: 0px 0px 10px grey;
+    }
+
+    .form {
+        text-align: center;
+    }
+
+    .input {
+        border-radius: 25px;
+        border: 2px solid #4620ac;
+        width: 300px;
+        height: 50px;
+        margin: 10px;
+    }
+
+    .drop {
+        border-radius: 25px;
+        border: 2px solid #4620ac;
+        width: 310px;
+        height: 50px;
+        margin: 10px;
+    }
+
+    .plus {
+        text-align: center;
+        padding: 20px;
+    }
+}
