@@ -11,6 +11,7 @@ body{
     border-radius: 15px;
     background-color: #c6c6d06c;
     padding: 5px;
+    margin-right: 20px;
 }
 .searchbar form{
     display: flex;
@@ -178,7 +179,7 @@ p{
 }
 .fsize{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     color: white;
     padding: 10px;
     max-width: 1080px;
@@ -285,6 +286,11 @@ p{
     display: none;
 }
 @media screen and (max-width: 800px){
+    .content{
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width: 600px){
     .mobileheader{
         display: flex; 
     }
@@ -304,7 +310,6 @@ p{
         display: none;
     }
     .content{
-        flex-wrap: wrap;
         margin-bottom: 0px;
     }
     .content > div{
