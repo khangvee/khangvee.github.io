@@ -8,12 +8,14 @@ body{
     background-repeat: no-repeat;
 }
 .bg {
-    background-color: rgba(70, 32, 172, 0.5);
+    background-color: rgba(70, 32, 172, 0.7);
 }
 .container{
     max-width: 1080px;
     margin-left: auto;
     margin-right: auto;
+    padding-bottom: 100px;
+    position: relative;
 }
 .join {
     max-width: 500px;
@@ -75,6 +77,10 @@ body{
     display: none;
 }
 
+.mfooter{
+    display: none;
+}
+
 @media screen and (max-width: 600px) {
     .content {
         flex-wrap: wrap;
@@ -106,6 +112,10 @@ body{
         max-width: 400px;
     }
 
+    .join > h1{
+        max-width: 200px;
+    }
+
     .signlog {
         display: none;
     }
@@ -117,6 +127,7 @@ body{
         border-radius: 25px;
         margin-left: auto;
         margin-right: auto;
+        margin-top: 80px;
     }
 
     .msignlog {
@@ -165,6 +176,7 @@ body{
         display: flex;
         justify-content: center;
         align-items: center;
+        cursor: pointer;
     }
 
     .male {
@@ -179,24 +191,59 @@ body{
         text-align: center;
     }
 
-    .input {
+    .userform {
         border-radius: 25px;
         border: 2px solid #4620ac;
         width: 300px;
         height: 50px;
-        margin: 10px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+    }
+
+    .input{
+        border: none;
     }
 
     .drop {
-        border-radius: 25px;
-        border: 2px solid #4620ac;
-        width: 310px;
-        height: 50px;
-        margin: 10px;
+        padding-right: 20px;
+        border: none;
+        width: 240px;
     }
 
     .plus {
         text-align: center;
         padding: 20px;
+    }
+
+    .btn{
+        border: none;
+        cursor: pointer;
+        background-color: #4620ac;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        color: yellow;
+    }
+
+    .plus h1{
+        margin: 0px;
+    }
+
+    .mfooter{
+        display: block;
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        background-color: #4620ac;
+        color: white;
+        width: 97vw;
+    }
+
+    .copyright{
+        text-align: center;
     }
 }

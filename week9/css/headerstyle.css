@@ -34,6 +34,9 @@ a{
 a:hover{
     text-decoration: underline;
 }
+.homeselected{
+    border-bottom: 5px solid white;
+}
 .selected{
     border-bottom: 5px solid #4620ac;
 }
