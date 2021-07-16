@@ -289,6 +289,31 @@ p{
     .content{
         flex-wrap: wrap;
     }
+    .cleft{
+        flex: 100%;
+        margin: 0px;
+    }
+    .lefttop{
+        padding: 0px;
+        justify-content: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .newrule{
+        margin-left: 100px;
+    }
+    .positive{
+        max-width: 800px;
+    }
+    .fleft{
+        width: 20%;
+    }
+    .fmid{
+        width: 50%;
+    }
+    .fright{
+        width: 30%;
+    }
 }
 @media screen and (max-width: 600px){
     .mobileheader{
@@ -310,6 +335,7 @@ p{
         display: none;
     }
     .content{
+        flex-wrap: wrap;
         margin-bottom: 0px;
     }
     .content > div{
