@@ -1,5 +1,7 @@
 body{
     max-width: 1080px;
+    background-image: url("../audio/background.png");
+    background-size: cover;
 }
 .searchbar{
     position: absolute;
@@ -63,12 +65,21 @@ body{
     border-radius: 5px;
     border: 1px solid #c6c6d0;
     cursor: pointer;
+    font-size: 9px;
+    min-height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .btnimg{
-    margin-left: 8px;
-    margin-right: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
-.leftbot > div{
+.scrollbar{
+    overflow-y: scroll;
+    height: 300px;
+}
+.scrollbar > div{
     display: flex;
     position: relative;
     border-bottom: 1px solid #c6c6d0;
@@ -96,8 +107,7 @@ p{
     top: 10px;
 }
 .righttop{
-    border-radius: 5px;
-    border: 1px solid #c6c6d0;
+    border-radius: 10px;
     box-shadow: 0px 0px 5px;
 }
 .positive{
@@ -108,6 +118,8 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 .be{
     background-color: rgba(0,0,0,0.3);
@@ -166,10 +178,10 @@ p{
 }
 .fsize{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     color: white;
     padding: 10px;
-    max-width: 1280px;
+    max-width: 1080px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -178,16 +190,23 @@ p{
     align-items: center;
     margin-right: 20px;
 }
+.fleft{
+    width: 15%;
+    padding-left: 10px;
+}
+.fmid{
+    width: 65%;
+}
 .bar{
     display: flex;
 }
 .yellow{
-    width: 15vw;
+    width: 30%;
     height: 8px;
     background-color: yellow;
 }
 .white{
-    width: 45vw;
+    width: 70%;
     height: 8px;
     background-color: white;
 }
@@ -195,6 +214,7 @@ p{
     display: flex;
     align-items: center;
     margin-left: 20px;
+    width: 20%;
 }
 .fright > img{
     margin-left: 20px;
@@ -213,12 +233,15 @@ p{
 }
 .mbtn{
     display: none;
-    justify-content: space-around;
+    justify-content: space-between;
     margin: 20px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .mbtn button{
     flex: 1;
-    min-width: 150px;
+    min-width: 120px;
     cursor: pointer;
 }
 .audio{
@@ -238,17 +261,22 @@ p{
 .mlist{
     margin-top: 50px;
     display: none;
+    overflow-y: scroll;
+    height: 300px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
 }
 .audiolist{
-    margin-left: 40px;
-    margin-right: 40px;
     position: relative;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 .dot{
     position: absolute;
     bottom: 0px;
-    right: 0px;
+    right: 8px;
 }
 .mlist h3{
     margin-bottom: 0px;
@@ -277,6 +305,7 @@ p{
     }
     .content{
         flex-wrap: wrap;
+        margin-bottom: 0px;
     }
     .content > div{
         flex: 1;
@@ -298,6 +327,10 @@ p{
     }
     .newbutton{
         justify-content: center;
+    }
+    .btn{
+        width: 150px;
+        font-size: 12px;
     }
     .mbtn{
         display: flex;
