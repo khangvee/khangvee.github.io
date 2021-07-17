@@ -76,19 +76,28 @@ body{
     margin-left: 5px;
     margin-right: 5px;
 }
-.scrollbar{
+.leftbot{
     overflow-y: scroll;
     height: 300px;
 }
-.scrollbar > div{
+.leftbot > div{
     display: flex;
     position: relative;
     border-bottom: 1px solid #c6c6d0;
     padding: 10px;
 }
+::-webkit-scrollbar{
+    width: 10px; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: grey; 
+    border-radius: 10px;
+}
 .btnmusic{
     margin-left: 10px;
     margin-right: 10px;
+    cursor: pointer;
 }
 #music7{
     border-bottom: none;
@@ -101,6 +110,7 @@ p{
     position: absolute;
     right: 100px;
     top: 10px;
+    cursor: pointer;
 }
 .duration{
     position: absolute;
@@ -135,13 +145,18 @@ p{
 }
 .about{
     padding: 20px;
-    position: relative;
     font-size: 80%;
 }
+.next{
+    display: flex;
+}
+.next > div{
+    flex: 1;
+}
 #add{
-    position: absolute;
-    right: 20px;
-    bottom: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
 }
 .rightbot{
     display: flex;
@@ -165,6 +180,7 @@ p{
     position: absolute;
     right: 10px;
     bottom: 10px;
+    cursor: pointer;
 }
 .img2{
     margin-left: 20px;
@@ -176,6 +192,9 @@ p{
     bottom: 0px;
     background-color: #4824ac;
     width: 100vw;
+}
+.footer img{
+    cursor: pointer;
 }
 .fsize{
     display: flex;
@@ -298,6 +317,9 @@ p{
         justify-content: center;
         margin-top: 50px;
         margin-bottom: 50px;
+    }
+    .imgnewrule{
+        margin-left: 20px;
     }
     .newrule{
         margin-left: 100px;
