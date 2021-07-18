@@ -73,11 +73,17 @@ body{
     margin: 30px;
 }
 #mlargeimage{
-    height: 200px;
-    margin-right: 20px;
+    height: 180px;
+    margin-right: 10px;
+    width: 170px;
+}
+#msmallimg1{
+    margin-bottom: 10px;
 }
 .msmallimg > img{
     display: block;
+    width: 75px;
+    height: 85px;
 }
 .mcheck{
     display: none;
