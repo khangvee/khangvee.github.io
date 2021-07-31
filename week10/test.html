@@ -1,0 +1,110 @@
+<!-- Week 10: Exercise 2 -->
+<!-- Tan Khang Vee -->
+<!-- 2030345-BCS -->
+<!DOCTYPE>
+<html>
+    <head>
+        <title>Exercise 2</title>
+        <style>
+            .primeminister{
+                border-collapse: collapse;
+                margin: auto;
+                font-size: 0.9em;
+                font-family: sans-serif;
+                min-width: 400px;
+                box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+            }
+            .primeminister thead tr{
+                background-color: #053742;
+                color: #ffffff;
+                text-align: left;
+            }
+            .primeminister th,td{
+                padding: 12px 15px;
+            }
+            .primeminister tbody tr{
+                border-bottom: 1px solid #dddddd;
+            }
+            .primeminister tbody tr:nth-of-type(even) {
+                background-color: #f3f3f3;
+                font-weight: bold;
+                color: #009879;
+            }
+            .primeminister tbody tr:last-of-type {
+                border-bottom: 2px solid #053742;
+            } 
+            @media screen and (max-width: 768px) {
+                .tablet{
+                    display: none;
+                }
+            }
+            @media screen and (max-width: 600px) {
+                .mobile{
+                    display: none;
+                }
+            }            
+        </style>
+    </head>
+    <body>
+        <table class="primeminister">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Term of Office</th>
+                    <th class="mobile">Coalition/Party</th>
+                    <th class="tablet">Honour</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Tunku Abdul Rahman</td>
+                    <td>31 August 1957</td>
+                    <td class="mobile">Alliance Party (UMNO)</td>
+                    <td class="tablet">Father of Independence</td>
+                </tr>
+                <tr>
+                    <td>Abdul Razak Hussein</td>
+                    <td>22 September 1970</td>
+                    <td class="mobile">BN (UMNO)</td>
+                    <td class="tablet">Father of Development</td>
+                </tr>
+                <tr>
+                    <td>Hussein Onn</td>
+                    <td>15 January 1976</td>
+                    <td class="mobile">BN (UMNO)</td>
+                    <td class="tablet">Father of Unity</td>
+                </tr>
+                <tr>
+                    <td>Mahathir Mohamad</td>
+                    <td>16 July 1981</td>
+                    <td class="mobile">BN (UMNO)</td>
+                    <td class="tablet">Father of Modernisation</td>
+                </tr>
+                <tr>
+                    <td>Abdullah Ahmad Badawi</td>
+                    <td>31 October 2003</td>
+                    <td class="mobile">BN (UMNO)</td>
+                    <td class="tablet">Father of Human Capital Development</td>
+                </tr>
+                <tr>
+                    <td>Mohammad Najib Abdul Razak</td>
+                    <td>3 April 2009</td>
+                    <td class="mobile">BN (UMNO)</td>
+                    <td class="tablet">Father of Transformation</td>
+                </tr>
+                <tr>
+                    <td>Mahathir Mohamad</td>
+                    <td>10 May 2018</td>
+                    <td class="mobile">PH (BERSATU)</td>
+                    <td class="tablet">Father of Modernisation</td>
+                </tr>
+                <tr>
+                    <td>Muhiddin Yassin</td>
+                    <td>1 March 2020 (incumbent)</td>
+                    <td class="mobile">PN (BERSATU)</td>
+                    <td class="tablet">null</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
