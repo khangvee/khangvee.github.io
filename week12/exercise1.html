@@ -16,6 +16,8 @@
             display: flex;
             height: 10vh;
             color: #707070;
+            align-items: center;
+            flex-wrap: wrap;
         }
 
         .headerleft {
@@ -30,58 +32,35 @@
             margin-right: 10px;
         }
 
-        .headerright {
+        .menu {
             display: flex;
             justify-content: flex-end;
-            align-items: center;
             flex: 2;
         }
 
-        .headerright a {
-            margin-left: 15px;
+        .menu a {
+            margin-left: 10px;
             margin-right: 10px;
             text-decoration: none;
             color: #707070;
         }
 
-        .headerright a:hover {
+        .menu a:hover {
             text-decoration: underline;
         }
 
-        .mobileheader {
+        .nav {
             display: none;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px;
-            padding-left: 20px;
-            padding-right: 20px;
-            color: #707070;
-        }
-
-        .mlogoimg>img {
-            width: 40px;
-        }
-
-        #mheaderlink {
-            display: none;
-        }
-
-        #mheaderlink a {
-            padding: 10px 16px;
-            text-decoration: none;
-            display: block;
-            color: #707070;
-        }
-
-        #mheaderlink a:hover {
-            text-decoration: underline;
+            position: absolute;
+            top: 30px;
+            right: 10px;
         }
 
         .dropdown-content {
             display: none;
             position: absolute;
             min-width: 100px;
-            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);    
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
             z-index: 1;
         }
 
@@ -97,28 +76,36 @@
             background-color: #ddd;
             text-decoration: none;
         }
+
         .dropdown:hover .dropdown-content {
             display: block;
         }
-        
-        @media screen and (max-width: 600px) {
-            .header {
-                display: none;
-            }
-
-            .mobileheader {
-                display: flex;
-            }
+        #mobilelink{
+            display: none;
         }
-
-        @media screen and (max-width: 480px) {
-            .icon {
-                display: none;
-            }
-
-            #mheaderlink {
+        #mobilelink a{
+            display: block;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: #707070;
+        }
+        #mobilelink > a:hover{
+            text-decoration: underline;
+        }
+        @media screen and (max-width: 600px) {
+            .logotext{
                 display: block;
             }
+            .nav {
+                display: block;
+            }
+            .menu {
+                display: none;
+            }
+            .dropdown-content{
+                position: static;
+            }
+            
         }
     </style>
 </head>
@@ -133,48 +120,45 @@
                 <h3>Malaysia Tour</h3>
             </div>
         </div>
+        <div class="nav">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()"><img
+                    src="../Assignment/homeimg/menu.png"></a>
+        </div>
         <div class="headerright">
-            <a class="selected" href="">HOME</a>
-            <div class="dropdown">
-                <a href="https://khangvee.github.io/assignment/about">ABOUT<i class="fa fa-caret-down"></i></a>
-                <div class="dropdown-content">
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
+            <div class="menu">
+                <a href="">HOME</a>
+                <div class="dropdown">
+                    <a href="">ABOUT<i class="fa fa-caret-down"></i></a>
+                    <div class="dropdown-content" id="droplink">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
                 </div>
+                <a href="">PLACES</a>
+                <a href="">FOODS</a>
+                <a href="">CONTACT US</a>
             </div>
-            <a href="https://khangvee.github.io/assignment/places">PLACES</a>
-            <a href="https://khangvee.github.io/assignment/foods">FOODS</a>
-            <a href="https://khangvee.github.io/assignment/contactus">CONTACT US</a>
         </div>
     </div>
-    <div>
-        <div class="mobileheader">
-            <div class="mlogoimg">
-                <img src="../Assignment/homeimg/logo.png">
-            </div>
-            <div class="mlogotext">
-                <h3>Malaysia Tour</h3>
-            </div>
-            <div class="nav">
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()"><img
-                        src="../Assignment/homeimg/menu.png"></a>
+    <div id="mobilelink">
+        <a href="">HOME</a>
+        <div class="dropdown">
+            <a href="">ABOUT<i class="fa fa-caret-down"></i></a>
+            <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
             </div>
         </div>
-        <div>
-            <div id="mheaderlink">
-                <a href="https://khangvee.github.io/assignment/index">HOME</a>
-                <a href="https://khangvee.github.io/assignment/about">ABOUT</a>
-                <a href="https://khangvee.github.io/assignment/places">PLACES</a>
-                <a href="https://khangvee.github.io/assignment/foods">FOODS</a>
-                <a href="https://khangvee.github.io/assignment/contactus">CONTACT</a>
-            </div>
-        </div>
+        <a href="">PLACES</a>
+        <a href="">FOODS</a>
+        <a href="">CONTACT US</a>
     </div>
 
     <script>
         function myFunction() {
-            var x = document.getElementById("mheaderlink");
+            var x = document.getElementById("mobilelink");
             if (x.style.display === "block") {
                 x.style.display = "none";
             } else {
