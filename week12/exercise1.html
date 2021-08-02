@@ -36,14 +36,14 @@
             flex: 2;
         }
 
-        a {
+        .headerright a {
             margin-left: 10px;
             margin-right: 5px;
             text-decoration: none;
             color: #707070;
         }
 
-        a:hover {
+        .headerright a:hover {
             text-decoration: underline;
         }
 
@@ -61,17 +61,18 @@
             width: 40px;
         }
 
-        #myLinks {
+        #mheaderlink {
             display: none;
         }
 
-        #myLinks>a {
+        #mheaderlink a {
             padding: 10px 16px;
             text-decoration: none;
-            font-size: 17px;
+            
             display: block;
+            color: #707070;
         }
-        #myLinks>a:hover{
+        #mheaderlink a:hover{
             text-decoration: underline;
         }
 
@@ -88,7 +89,7 @@
             .icon{
                 display: none;
             }
-            #myLinks{
+            #mheaderlink{
                 display: block;
             }
         }
@@ -126,20 +127,20 @@
                         src="../Assignment/homeimg/menu.png"></a>
             </div>
         </div>
-        <div class="bottom">
-            <div id="myLinks">
-                <a>HOME</a>
-                <a>ABOUT</a>
-                <a>PLACES</a>
-                <a>FOODS</a>
-                <a>CONTACT</a>
+        <div>
+            <div id="mheaderlink">
+                <a href="https://khangvee.github.io/assignment/index">HOME</a>
+                <a href="https://khangvee.github.io/assignment/about">ABOUT</a>
+                <a href="https://khangvee.github.io/assignment/places">PLACES</a>
+                <a href="https://khangvee.github.io/assignment/foods">FOODS</a>
+                <a href="https://khangvee.github.io/assignment/contactus">CONTACT</a>
             </div>
         </div>
     </div>
 
     <script>
         function myFunction() {
-            var x = document.getElementById("myLinks");
+            var x = document.getElementById("mheaderlink");
             if (x.style.display === "block") {
                 x.style.display = "none";
             } else {
