@@ -4,6 +4,7 @@
 <head>
     <title>Exercise 1</title>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         body {
             font-family: 'Lato', sans-serif;
@@ -80,7 +81,8 @@
             display: none;
             position: absolute;
             min-width: 100px;
-            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);    
+            z-index: 1;
         }
 
         .dropdown-content a {
@@ -133,7 +135,7 @@
         <div class="headerright">
             <a class="selected" href="">HOME</a>
             <div class="dropdown">
-                <a href="https://khangvee.github.io/assignment/about">ABOUT</a>
+                <a href="https://khangvee.github.io/assignment/about">ABOUT<i class="fa fa-caret-down"></i></a>
                 <div class="dropdown-content">
                     <a href="#">Link 1</a>
                     <a href="#">Link 2</a>
