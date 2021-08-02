@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Places Page</title>
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/foods.css">
+        <link rel="stylesheet" href="css/footer.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="header">
+            <div class="headerleft">
+                <div class="logoimg">
+                    <img src="../Assignment/homeimg/logo.png">
+                </div>
+                <div class="logotext">
+                    <h3>Malaysia Tour</h3>
+                </div>
+            </div>
+            <div class="headerright">
+                <a href="https://khangvee.github.io/Assignment/">HOME</a>
+                <a href="https://khangvee.github.io/Assignment/about">ABOUT</a>
+                <a href="https://khangvee.github.io/Assignment/places">PLACES</a>
+                <a class="selected" href="">FOODS</a>
+                <a href="https://khangvee.github.io/Assignment/contactus">CONTACT US</a>
+            </div>
+            <div class="nav">
+                <a href="javascript:void(0);" onclick="navFunction()"><img src="../Assignment/homeimg/menu.png"></a>
+            </div>
+        </div>
+        <div id="mobilelink">
+            <a href="https://khangvee.github.io/Assignment/">HOME</a>
+            <a href="https://khangvee.github.io/Assignment/about">ABOUT</a>
+            <a href="https://khangvee.github.io/Assignment/places">PLACES</a>
+            <a class="mselected" href="">FOODS</a>
+            <a href="https://khangvee.github.io/Assignment/contactus">CONTACT US</a>
+        </div>
+        <div class="famous">
+            <div class="famoustext">
+                <h1>FAMOUS FOODS <br> IN MALAYSIA</h1>
+            </div>
+        </div>
+        <div class="container" id="c1">
+            <div class="title">
+                <h1>Malay's <br> Foods</h1>
+            </div>
+            <div class="containersize">
+                <img src="foodsimg/nasilemak.jpg">
+                <h3>Nasi Lemak</h3>
+            </div>
+            <div class="containersize">
+                <img src="foodsimg/satay.jpg">
+                <h3>Satay</h3>
+            </div>
+            <div class="containersize">
+                <img src="foodsimg/kuih.jpg">
+                <h3>Malay Kuih</h3>
+            </div>
+        </div>
+        <div class="container" id="c2">
+            <div class="title">
+                <h1>Chinese's <br> Foods</h1>
+            </div>
+            <div class="containersize">
+                <img src="foodsimg/bakkutteh.jpg">
+                <h3>Bak Kut Teh</h3>
+            </div>
+            <div class="containersize">
+                <img src="foodsimg/hokkienmee.png">
+                <h3>Hokkienmee</h3>
+            </div>
+            <div class="containersize">
+                <img src="foodsimg/asamlaksa.png">
+                <h3>Asam Laksa</h3>
+            </div>
+        </div>
+        <div class="container" id="c3">
+            <div class="title">
+                <h1>Indian's <br> Foods</h1>
+            </div>
+            <div class="containersize">
+                <img src="foodsimg/roticanai.jpg">
+                <h3>Roti Canai</h3>
+            </div>
+            <div class="containersize">
+                <img src="foodsimg/nasibriyani.jpg">
+                <h3>Nasi Briyani</h3>
+            </div>
+            <div class="containersize">
+                <img src="foodsimg/rojak.jpg">
+                <h3>Rojak</h3>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footerleft">
+                <img src="../Assignment/homeimg/logo.png">
+            </div>
+            <div class="footerright">
+                <h3>FOLLOW US</h3>
+                <div class="footerblock"></div>
+                <img src="../Assignment/homeimg/facebook.png">
+                <img src="../Assignment/homeimg/twitter.png">
+                <img src="../Assignment/homeimg/instagram.png">
+            </div>
+        </div>
+        <script>
+            function navFunction() {
+                var x = document.getElementById("mobilelink");
+                if (x.style.display === "block") {
+                    x.style.display = "none";
+                } else {
+                    x.style.display = "block";
+                }
+            }
+        </script>
+    </body>
+</html>
