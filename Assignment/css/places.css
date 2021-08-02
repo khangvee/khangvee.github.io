@@ -1,0 +1,53 @@
+.popular{
+    background-image: url("../placesimg/placebg.jpg");
+    background-size: cover;
+    height: 80vh;
+    background-position: center;
+    margin-bottom: 30px;
+}
+.populartext{
+    display: flex;
+    height: 80vh;
+    color: white;
+    font-size: 35px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.container > div{
+    flex: 25%;
+    max-width: 350px;
+    margin: 30px;
+}
+.container img{
+    max-width: 350px;
+    width: 100%;
+}
+@media screen and (max-width: 768px){
+    .popular{
+        margin-bottom: 0;
+    }
+    .populartext{
+        font-size: 25px;
+    }
+    .container > div{
+        flex: 35%;
+    }
+}
+@media screen and (max-width: 600px){
+    .populartext{
+        font-size: 20px;
+    }
+    .container > div{
+        flex: 100%;
+        margin-bottom: 0;
+    }
+    .container{
+        margin-bottom: 20px;
+    }
+}
