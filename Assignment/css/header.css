@@ -18,6 +18,12 @@ body{
     margin-left: 20px;
     margin-right: 10px;
 }
+.nav {
+    display: none;
+    position: absolute;
+    top: 35px;
+    right: 10px;
+}
 .headerright{
     display: flex;
     justify-content: flex-end;
@@ -33,23 +39,30 @@ a{
 a:hover{
     text-decoration: underline;
 }
-.mobileheader{
+#mobilelink{
     display: none;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-    color: #707070;
 }
-.mlogoimg > img{
-    width: 40px;
+#mobilelink a{
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #707070;
+    margin: 0px;
+}
+#mobilelink a:hover{
+    background-color: #ddd;
+}
+.selected{
+    text-decoration: underline;
+}
+.mselected{
+    background-color: #ddd;
 }
 @media screen and (max-width: 600px){
-    .header{
+    .headerright{
         display: none;
     }
-    .mobileheader{
-        display: flex;
+    .nav{
+        display: block;
     }
 }
