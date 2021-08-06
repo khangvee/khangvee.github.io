@@ -15,7 +15,7 @@
 }
 .container{
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     padding: 20px 0px;
     margin: 30px 0;
 }
@@ -27,14 +27,11 @@
     max-width: 300px;
     height: 180px;
 }
-.title{
+.container > div{
     flex: 1;
-    align-self: center;
-    min-width: 130px;
 }
-.containersize{
-    flex: 2;
-    max-width: 300px;
+.title{
+    text-align: center;
 }
 .container h3{
     text-align: center;
@@ -48,4 +45,27 @@
 }
 #c3{
     background-color: #39A2DB;
+}
+@media screen and (max-width: 900px){
+    .famoustext{
+        font-size: 25px;
+    }
+    .container{
+        flex-wrap: wrap;
+    }
+    .container > div{
+        flex: 45%;
+        text-align: center;
+    }
+    .container img{
+        max-width: 350px;
+    }
+}
+@media screen and (max-width: 600px){
+    .famoustext{
+        font-size: 20px;
+    }
+    .container > div{
+        flex: 100%;
+    }
 }
