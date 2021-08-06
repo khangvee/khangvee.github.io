@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Places Page</title>
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/contact.css">
+        <link rel="stylesheet" href="css/footer.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="header">
+            <div class="headerleft">
+                <div class="logoimg">
+                    <img src="../Assignment/homeimg/logo.png">
+                </div>
+                <div class="logotext">
+                    <h3>Malaysia Tour</h3>
+                </div>
+            </div>
+            <div class="headerright">
+                <a href="https://khangvee.github.io/Assignment/">HOME</a>
+                <a href="https://khangvee.github.io/Assignment/about">ABOUT</a>
+                <a href="https://khangvee.github.io/Assignment/places">PLACES</a>
+                <a href="https://khangvee.github.io/Assignment/foods">FOODS</a>
+                <a class="selected" href="">CONTACT US</a>
+            </div>
+            <div class="nav">
+                <a href="javascript:void(0);" onclick="navFunction()"><img src="../Assignment/homeimg/menu.png"></a>
+            </div>
+        </div>
+        <div id="mobilelink">
+            <a href="https://khangvee.github.io/Assignment/">HOME</a>
+            <a href="https://khangvee.github.io/Assignment/about">ABOUT</a>
+            <a class="mselected" href="">PLACES</a>
+            <a href="https://khangvee.github.io/Assignment/foods">FOODS</a>
+            <a href="https://khangvee.github.io/Assignment/contactus">CONTACT US</a>
+        </div>
+        <div class="container">
+            <div class="background">
+                <img src="contactimg/contact.jpg">
+            </div>
+            <div class="content">
+                <div class="contentsize">
+                <div class="text">
+                    <h2>HAVE SOME QUESTIONS?</h2>
+                    <h3>Feel free to drop us a line !!!</h3>
+                </div>
+                <div class="form">
+                    <form>
+                        <input type="text" placeholder="Name" class="textfield"><br>
+                        <input type="text" placeholder="Email Address" class="textfield"><br>
+                        <input type="radio" name="gender" id="male">
+                        <label for="male" class="radiobtn">Male</label>
+                        <input type="radio" name="gender" id="female">
+                        <label for="female" >Female</label><br>
+                        <select id="dropdown">
+                            <option>Country</option>
+                            <option>Australia</option>
+                            <option>China</option>
+                            <option>India</option>
+                            <option>Japan</option>
+                            <option>Korea</option>
+                            <option>Malaysia</option>
+                            <option>Thailand</option>
+                            <option>Singapore</option>
+                            <option>United States</option>
+                        </select><br>
+                        <textarea placeholder="Messages" rows="6" cols="36" id="textarea"></textarea><br>
+                        <button id="sendbtn">Send Message</button>
+                    </form>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footerleft">
+                <img src="../Assignment/homeimg/logo.png">
+            </div>
+            <div class="footerright">
+                <h3>FOLLOW US</h3>
+                <div class="footerblock"></div>
+                <img src="../Assignment/homeimg/facebook.png">
+                <img src="../Assignment/homeimg/twitter.png">
+                <img src="../Assignment/homeimg/instagram.png">
+            </div>
+        </div>
+        <script>
+            function navFunction() {
+                var x = document.getElementById("mobilelink");
+                if (x.style.display === "block") {
+                    x.style.display = "none";
+                } else {
+                    x.style.display = "block";
+                }
+            }
+        </script>
+    </body>
+</html>
