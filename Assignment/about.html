@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Places Page</title>
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/about.css">
+        <link rel="stylesheet" href="css/footer.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="header">
+            <div class="headerleft">
+                <div class="logoimg">
+                    <img src="../Assignment/homeimg/logo.png">
+                </div>
+                <div class="logotext">
+                    <h3>Malaysia Tour</h3>
+                </div>
+            </div>
+            <div class="headerright">
+                <a href="https://khangvee.github.io/Assignment/">HOME</a>
+                <a class="selected" href="">ABOUT</a>
+                <a href="https://khangvee.github.io/Assignment/places">PLACES</a>
+                <a href="https://khangvee.github.io/Assignment/foods">FOODS</a>
+                <a href="https://khangvee.github.io/Assignment/contactus">CONTACT US</a>
+            </div>
+            <div class="nav">
+                <a href="javascript:void(0);" onclick="navFunction()"><img src="../Assignment/homeimg/menu.png"></a>
+            </div>
+        </div>
+        <div id="mobilelink">
+            <a href="https://khangvee.github.io/Assignment/">HOME</a>
+            <a href="https://khangvee.github.io/Assignment/about">ABOUT</a>
+            <a class="mselected" href="">PLACES</a>
+            <a href="https://khangvee.github.io/Assignment/foods">FOODS</a>
+            <a href="https://khangvee.github.io/Assignment/contactus">CONTACT US</a>
+        </div>
+        <div class="about">
+            <div class="abouttext">
+                <h1>ABOUT <br> MALAYSIA</h1>
+            </div>
+        </div>
+        <div class="container">
+            <div class="content">
+                <div class="westmap">
+                    <img src="aboutimg/west.jpg">
+                </div>
+                <div class="contenttext">
+                    <h1>West Malaysia</h1>
+                    <p>West Malaysia is made up of 11 states which are Perlis, Kedah, Penang, Perak, Selangor, Negeri Sembilan, Malacca, Johor, Pahang, Terengganu, and Kelantan.</p>
+                </div>
+            </div>
+            <div class="content">
+                <div class="eastmap">
+                    <img src="aboutimg/east.jpg">
+                </div>
+                <div class="contenttext">
+                    <h1>East Malaysia</h1>
+                    <p>East Malaysia is made up of the two largest states, Sabah and Sarawak. It contains more tropical forests and wildlife habitat compared to West Malaysia.</p>
+                </div>
+            </div>
+        </div>
+        <div class="primetitle">
+            <h1>Prime Minister of Malaysia</h1>
+        </div>
+        <table class="primeminister">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Term of Office</th>
+                    <th class="mobile">Coalition/Party</th>
+                    <th class="tablet">Honour</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Tunku Abdul Rahman</td>
+                    <td>31 August 1957</td>
+                    <td class="mobile">Alliance Party (UMNO)</td>
+                    <td class="tablet">Father of Independence</td>
+                </tr>
+                <tr>
+                    <td>Abdul Razak Hussein</td>
+                    <td>22 September 1970</td>
+                    <td class="mobile">BN (UMNO)</td>
+                    <td class="tablet">Father of Development</td>
+                </tr>
+                <tr>
+                    <td>Hussein Onn</td>
+                    <td>15 January 1976</td>
+                    <td class="mobile">BN (UMNO)</td>
+                    <td class="tablet">Father of Unity</td>
+                </tr>
+                <tr>
+                    <td>Mahathir Mohamad</td>
+                    <td>16 July 1981</td>
+                    <td class="mobile">BN (UMNO)</td>
+                    <td class="tablet">Father of Modernisation</td>
+                </tr>
+                <tr>
+                    <td>Abdullah Ahmad Badawi</td>
+                    <td>31 October 2003</td>
+                    <td class="mobile">BN (UMNO)</td>
+                    <td class="tablet">Father of Human Capital Development</td>
+                </tr>
+                <tr>
+                    <td>Mohammad Najib Abdul Razak</td>
+                    <td>3 April 2009</td>
+                    <td class="mobile">BN (UMNO)</td>
+                    <td class="tablet">Father of Transformation</td>
+                </tr>
+                <tr>
+                    <td>Mahathir Mohamad</td>
+                    <td>10 May 2018</td>
+                    <td class="mobile">PH (BERSATU)</td>
+                    <td class="tablet">Father of Modernisation</td>
+                </tr>
+                <tr>
+                    <td>Muhiddin Yassin</td>
+                    <td>1 March 2020 (incumbent)</td>
+                    <td class="mobile">PN (BERSATU)</td>
+                    <td class="tablet">null</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="footer">
+            <div class="footerleft">
+                <img src="../Assignment/homeimg/logo.png">
+            </div>
+            <div class="footerright">
+                <h3>FOLLOW US</h3>
+                <div class="footerblock"></div>
+                <img src="../Assignment/homeimg/facebook.png">
+                <img src="../Assignment/homeimg/twitter.png">
+                <img src="../Assignment/homeimg/instagram.png">
+            </div>
+        </div>
+        <script>
+            function navFunction() {
+                var x = document.getElementById("mobilelink");
+                if (x.style.display === "block") {
+                    x.style.display = "none";
+                } else {
+                    x.style.display = "block";
+                }
+            }
+        </script>
+    </body>
+</html>

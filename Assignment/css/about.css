@@ -1,0 +1,117 @@
+.about{
+    background-image: url("../aboutimg/aboutbg.jpeg");
+    background-size: cover;
+    height: 80vh;
+    background-position: center;
+    position: relative;
+    margin-bottom: 20px;
+}
+.abouttext{
+    position: absolute;
+    bottom: 0px;
+    right: 30px;
+    color: white;
+    font-size: 35px;
+    text-align: right;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    color: #053742;
+}
+.container > div{
+    flex: 1;
+    margin: 10px;
+}
+.container img{
+    max-width: 250px;
+    padding: 10px;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    border: 1px solid #707070;
+    border-radius: 20px;
+    align-items: center;
+}
+.content > div{
+    flex: 1;
+}
+.contenttext{
+    padding: 5px;
+}
+.primetitle{
+    text-align: center;
+    color: #053742;
+}
+.primeminister{
+    border-collapse: collapse;
+    margin: auto;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    margin-bottom: 30px;
+}
+.primeminister thead tr{
+    background-color: #053742;
+    color: #ffffff;
+    text-align: left;
+}
+.primeminister th,td{
+    padding: 12px 15px;
+}
+.primeminister tbody tr{
+    border-bottom: 1px solid #dddddd;
+}
+.primeminister tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+    font-weight: bold;
+    color: #009879;
+}
+.primeminister tbody tr:last-of-type {
+    border-bottom: 2px solid #053742;
+}
+@media screen and (max-width: 1000px){
+    .container img{
+        max-width: 200px;
+    }
+}
+@media screen and (max-width: 768px){
+    .abouttext{
+        font-size: 25px;
+    }
+    .container{
+        flex-wrap: wrap;
+    }
+    .container img{
+        max-width: 250px;
+    }
+    .container > div{
+        flex: 100%;
+        max-width: 620px;
+        min-height: 280px;
+    }
+    .tablet{
+        display: none;
+    }
+}
+@media screen and (max-width: 600px){
+    .abouttext{
+        font-size: 20px;
+    }
+    .content{
+        flex-wrap: wrap;
+    }
+    .container > div{
+        max-width: 450px;
+    }
+    .content > div{
+        flex: 100%;
+        max-width: 500px;
+        text-align: center;
+    }
+    .mobile{
+        display: none;
+    }
+}
