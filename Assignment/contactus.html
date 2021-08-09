@@ -55,8 +55,8 @@
                         <label for="male" class="radiobtn">Male</label>
                         <input type="radio" name="gender" id="female">
                         <label for="female" >Female</label><br>
-                        <select id="dropdown">
-                            <option>Country</option>
+                        <select id="dropdown" onchange="changeMe(this)">
+                            <option selected disabled>Country</option>
                             <option>Australia</option>
                             <option>China</option>
                             <option>India</option>
@@ -67,7 +67,7 @@
                             <option>Singapore</option>
                             <option>United States</option>
                         </select><br>
-                        <textarea placeholder="Messages" rows="6" cols="36" id="textarea"></textarea><br>
+                        <textarea placeholder="Messages" rows="6" cols="37" id="textarea"></textarea><br>
                         <button id="sendbtn">Send Message</button>
                     </form>
                 </div>
@@ -94,6 +94,12 @@
                 } else {
                     x.style.display = "block";
                 }
+            }
+        </script>
+        <script type="text/javascript">
+            function changeMe(sel)
+            {
+              sel.style.color = "#000";              
             }
         </script>
     </body>

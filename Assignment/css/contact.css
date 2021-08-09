@@ -19,7 +19,7 @@
     color: #053742;
 }
 .textfield{
-    width: 280px;
+    width: 285px;
     height: 30px;
     border-radius: 10px;
     border: 1px solid #707070;
@@ -30,8 +30,8 @@
     margin-right: 80px;
 }
 #dropdown{
-    width: 294px;
-    height: 30px;
+    width: 299px;
+    height: 35px;
     border-radius: 10px;
     padding-left: 10px;
     margin: 10px 0;
@@ -42,8 +42,16 @@
     padding-left: 10px;
     margin-bottom: 10px;
 }
+select
+{
+    color: #707070;
+}
+option
+{
+    color: #000;
+}
 #sendbtn{
-    width: 294px;
+    width: 299px;
     height: 40px;
     background-color: #48CEC1;
     color: white;
