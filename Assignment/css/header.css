@@ -22,13 +22,14 @@ body{
     display: none;
     position: absolute;
     top: 35px;
-    right: 10px;
+    right: 20px;
 }
 .headerright{
     display: flex;
     justify-content: flex-end;
     align-items: center;
     flex: 2;
+    margin-right: 15px;
 }
 .headerright a{
     margin-left: 10px;
