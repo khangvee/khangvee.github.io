@@ -4,9 +4,9 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Contact Us Page</title>
+        <title>Thanks Page</title>
         <link rel="stylesheet" href="css/header.css">
-        <link rel="stylesheet" href="css/contact.css">
+        <link rel="stylesheet" href="css/thanks.css">
         <link rel="stylesheet" href="css/footer.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,7 +28,7 @@
                 <a href="https://khangvee.github.io/Assignment/about">ABOUT</a>
                 <a href="https://khangvee.github.io/Assignment/places">PLACES</a>
                 <a href="https://khangvee.github.io/Assignment/foods">FOODS</a>
-                <a class="selected" href="">CONTACT US</a>
+                <a class="selected" href="https://khangvee.github.io/Assignment/contactus">CONTACT US</a>
             </div>
             <div class="nav">
                 <a href="javascript:void(0);" onclick="navFunction()"><img src="../Assignment/homeimg/menu.png"></a>
@@ -42,39 +42,16 @@
             <a class="mselected" href="">CONTACT US</a>
         </div>
         <div class="container">
-            <div class="background">
-                <img src="contactimg/contact.jpg">
-            </div>
-            <div class="content">
-                <div class="contentsize">
-                    <div class="text">
-                        <h2>HAVE SOME QUESTIONS?</h2>
-                        <h3>Feel free to drop us a line !!!</h3>
-                    </div>
-                    <div class="form">
-                        <form>
-                            <input type="text" placeholder="&nbsp &nbsp Name" class="textfield" required><br>
-                            <input type="email" placeholder="&nbsp &nbsp Email Address" class="textfield" required><br>
-                            <input type="radio" name="gender" id="male">
-                            <label for="male" class="radiobtn">Male</label>
-                            <input type="radio" name="gender" id="female">
-                            <label for="female" >Female</label><br>
-                            <select id="dropdown" onchange="changeMe(this)" required>
-                                <option selected disabled>&nbsp &nbspCountry</option>
-                                <option>Australia</option>
-                                <option>China</option>
-                                <option>India</option>
-                                <option>Japan</option>
-                                <option>Korea</option>
-                                <option>Malaysia</option>
-                                <option>Thailand</option>
-                                <option>Singapore</option>
-                                <option>United States</option>
-                            </select><br>
-                            <textarea placeholder="&nbsp &nbsp Messages" rows="7" id="textarea"></textarea><br>
-                            <a href="https://khangvee.github.io/Assignment/thanks"><button id="sendbtn">Send Message</button></a>
-                        </form>
-                    </div>
+            <div class="containersize">
+                <div class="image">
+                    <img src="contactimg/thanks.jpg">
+                </div>
+                <div>
+                    <h1>THANK YOU FOR YOUR FEEDBACK !</h1>
+                    <h3>We really appreciate your response.</h3>
+                </div>
+                <div>
+                    <a href="https://khangvee.github.io/Assignment/contactus"><button class="btnback">Back</button></a>
                 </div>
             </div>
         </div>
@@ -98,12 +75,6 @@
                 } else {
                     x.style.display = "block";
                 }
-            }
-        </script>
-        <script type="text/javascript">
-            function changeMe(sel)
-            {
-              sel.style.color = "#000";              
             }
         </script>
     </body>

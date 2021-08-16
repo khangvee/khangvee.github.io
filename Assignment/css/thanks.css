@@ -1,0 +1,27 @@
+.container{
+    height: 70vh;
+    background-image: linear-gradient(to right, #39A2DB, #A2DBFA);
+    color: #053742;
+}
+.containersize{
+    padding: 30px 20px;
+    text-align: center;
+}
+.image{
+    max-width: 500px;
+    margin: auto;
+}
+.image > img{
+    width: 100%;
+    height: 35vh;
+}
+.btnback{
+    background-color: #48CEC1;
+    color: white;
+    width: 100px;
+    height: 30px;
+    border: 1px solid #707070;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+}
