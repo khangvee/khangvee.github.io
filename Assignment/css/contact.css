@@ -6,38 +6,49 @@
 }
 .background > img{
     width: 100%;
-    height: 60vh;
+    height: 100%;
 }
 .content{
     flex: 2;
 }
 .contentsize{
     max-width: 300px;
-    margin: auto;
+    margin: auto auto;
 }
 .text{
     color: #053742;
 }
 .textfield{
-    width: 283px;
-    height: 30px;
+    width: 100%;
+    height: 40px;
     border-radius: 10px;
     border: 1px solid #707070;
+    padding: 0;
     margin-bottom: 10px;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
 }
 .radiobtn{
     margin-right: 70px;
 }
 #dropdown{
-    width: 289px;
-    height: 35px;
+    width: 100%;
+    height: 45px;
     border-radius: 10px;
+    border: 1px solid #707070;
     margin: 10px 0;
     cursor: pointer;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
 }
 #textarea{
     border-radius: 10px;
+    border: 1px solid #707070;
     margin-bottom: 10px;
+    padding: 0;
+    width: 100%;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
 }
 select
 {
@@ -48,13 +59,14 @@ option
     color: #000;
 }
 #sendbtn{
-    width: 289px;
+    width: 100%;
     height: 40px;
     background-color: #48CEC1;
     color: white;
     border: 1px solid #707070;
     cursor: pointer;
     padding: 0;
+    margin-bottom: 10px;
 }
 @media screen and (max-width: 768px){
     .container{
